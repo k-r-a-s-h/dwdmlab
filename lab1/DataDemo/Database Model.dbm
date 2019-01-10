@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<xmi:XMI xmlns:datamodelversion="http://www.ibm.com/com.ibm.datatools.core/model/7.5.2.0" xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DB2Model="http:///com/ibm/db/models/db2/db2.ecore" xmlns:LUW="http:///com/ibm/db/models/db2/luw.ecore" xmlns:SQLConstraints="http:///org/eclipse/datatools/modelbase/sql/constraints.ecore" xmlns:SQLDataTypes="http:///org/eclipse/datatools/modelbase/sql/datatypes.ecore" xmlns:datanotation="http:///datanotation.ecore">
+  <LUW:LUWDatabase xmi:id="_DdhRYRS0EemkEoMYL9WKkQ" name="Database" vendor="DB2 UDB" version="V8.2" schemas="_DjxqYBS0EemkEoMYL9WKkQ"/>
+  <DB2Model:DB2Schema xmi:id="_DjxqYBS0EemkEoMYL9WKkQ" name="COMPANY1228" tables="_Mj6OIBS0EemkEoMYL9WKkQ _S9iCoBS0EemkEoMYL9WKkQ" database="_DdhRYRS0EemkEoMYL9WKkQ">
+    <eAnnotations xmi:id="_DlkaIBS0EemkEoMYL9WKkQ" source="diagram">
+      <contents xsi:type="datanotation:DataDiagram" xmi:id="_DlkaIRS0EemkEoMYL9WKkQ" type="IE_CrowFoot" name="Diagram1" viewKind="ProjectExplorer" notation="IE_CrowFoot" kind="Physical">
+        <styles xsi:type="datanotation:DataAttributeStyle" xmi:id="_DlkaIhS0EemkEoMYL9WKkQ"/>
+        <styles xsi:type="datanotation:DataCompartmentStyle" xmi:id="_DlkaIxS0EemkEoMYL9WKkQ"/>
+        <styles xsi:type="datanotation:DataDisplayStyle" xmi:id="_DlkaJBS0EemkEoMYL9WKkQ"/>
+        <styles xsi:type="datanotation:DataDiagramRelationshipStyle" xmi:id="_DlkaJRS0EemkEoMYL9WKkQ"/>
+        <styles xsi:type="datanotation:DataShapeNameStyle" xmi:id="_DlkaJhS0EemkEoMYL9WKkQ"/>
+        <styles xsi:type="datanotation:DataDiagramFormattingStyle" xmi:id="_DlkaJxS0EemkEoMYL9WKkQ"/>
+        <element xsi:nil="true"/>
+      </contents>
+    </eAnnotations>
+  </DB2Model:DB2Schema>
+  <LUW:LUWTable xmi:id="_Mj6OIBS0EemkEoMYL9WKkQ" name="EMPLOYEE" schema="_DjxqYBS0EemkEoMYL9WKkQ" referencingForeignKeys="_A2WlYBS1EemkEoMYL9WKkQ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Whss8BS0EemkEoMYL9WKkQ" name="E_ID" nullable="false" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_cMH5IBS0EemkEoMYL9WKkQ" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="32"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_m8JtMBS0EemkEoMYL9WKkQ" name="ENAME" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_qd1EMBS0EemkEoMYL9WKkQ" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="32"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_sHE58BS0EemkEoMYL9WKkQ" name="SALARY">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_sc1HgBS0EemkEoMYL9WKkQ" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="32"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_gfJ0kBS0EemkEoMYL9WKkQ" name="EMPLOYEE_PK" members="_Whss8BS0EemkEoMYL9WKkQ" ForeignKey="_A2WlYBS1EemkEoMYL9WKkQ"/>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_S9iCoBS0EemkEoMYL9WKkQ" name="DEPARTMENT" schema="_DjxqYBS0EemkEoMYL9WKkQ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_vCKLABS0EemkEoMYL9WKkQ" name="D_ID" nullable="false" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_xQdOkBS0EemkEoMYL9WKkQ" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="32"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_1E04EBS0EemkEoMYL9WKkQ" name="DNAME">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_1fNG8BS0EemkEoMYL9WKkQ" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="32"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_4qJY8BS0EemkEoMYL9WKkQ" name="DEMP" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_61nyABS0EemkEoMYL9WKkQ" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="32"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_8Bd6EBS0EemkEoMYL9WKkQ" name="DRANK">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_9cDowBS0EemkEoMYL9WKkQ" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="32"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_zNBo8BS0EemkEoMYL9WKkQ" name="DEPARTMENT_PK" members="_vCKLABS0EemkEoMYL9WKkQ"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_A2WlYBS1EemkEoMYL9WKkQ" name="DEPARTME_EMPLOY_FK" members="_4qJY8BS0EemkEoMYL9WKkQ" onDelete="CASCADE" uniqueConstraint="_gfJ0kBS0EemkEoMYL9WKkQ" referencedTable="_Mj6OIBS0EemkEoMYL9WKkQ">
+      <eAnnotations xmi:id="_A2WlYRS1EemkEoMYL9WKkQ" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_A2WlYhS1EemkEoMYL9WKkQ" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
+        <details xmi:id="_A2WlYxS1EemkEoMYL9WKkQ" key="FK_CHILD_MULTIPLICITY" value=""/>
+        <details xmi:id="_A2WlZBS1EemkEoMYL9WKkQ" key="FK_CHILD_ROLE_NAME" value="Verb1"/>
+        <details xmi:id="_A2WlZRS1EemkEoMYL9WKkQ" key="FK_PARENT_MULTIPLICITY" value=""/>
+        <details xmi:id="_A2WlZhS1EemkEoMYL9WKkQ" key="FK_PARENT_ROLE_NAME" value=""/>
+      </eAnnotations>
+    </constraints>
+  </LUW:LUWTable>
+</xmi:XMI>

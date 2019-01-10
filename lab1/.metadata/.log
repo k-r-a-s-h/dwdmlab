@@ -1,0 +1,578 @@
+!SESSION 2019-01-10 14:09:27.847 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=J2RE 1.6.0 IBM J9 2.4 Windows Vista x86-32 jvmwi3260sr5-20090519_35743 (JIT enabled, AOT enabled)
+J9VM - 20090519_035743_lHdSMr
+JIT  - r9_20090518_2017
+GC   - 20090417_AA
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_IN
+Framework arguments:  -product com.ibm.datatools.sqw.product.ifwhluw.ifwhluw
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ibm.datatools.sqw.product.ifwhluw.ifwhluw
+
+!ENTRY org.eclipse.emf.ecore 2 0 2019-01-10 14:12:53.304
+!MESSAGE Both 'com.ibm.datatools.sqw.dataprep.models.pmmm' and 'org.eclipse.datatools.modelbase.sql' register a package for 'http:///org/eclipse/datatools/modelbase/sql/schema.ecore'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2019-01-10 14:12:53.304
+!MESSAGE Both 'com.ibm.datatools.sqw.dataprep.models.pmmm' and 'org.eclipse.datatools.modelbase.sql' register a package for 'http:///org/eclipse/datatools/modelbase/sql/tables.ecore'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2019-01-10 14:12:53.304
+!MESSAGE Both 'com.ibm.datatools.sqw.dataprep.models.pmmm' and 'org.eclipse.datatools.modelbase.sql' register a package for 'http:///org/eclipse/datatools/modelbase/sql/constraints.ecore'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2019-01-10 14:12:53.304
+!MESSAGE Both 'com.ibm.datatools.sqw.dataprep.models.pmmm' and 'org.eclipse.datatools.modelbase.sql' register a package for 'http:///org/eclipse/datatools/modelbase/sql/datatypes.ecore'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2019-01-10 14:12:53.304
+!MESSAGE Both 'com.ibm.datatools.sqw.dataprep.models.pmmm' and 'org.eclipse.datatools.modelbase.sql' register a package for 'http:///org/eclipse/datatools/modelbase/sql/expressions.ecore'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2019-01-10 14:12:53.304
+!MESSAGE Both 'com.ibm.datatools.sqw.dataprep.models.pmmm' and 'org.eclipse.datatools.modelbase.sql' register a package for 'http:///org/eclipse/datatools/modelbase/sql/statements.ecore'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2019-01-10 14:12:53.304
+!MESSAGE Both 'com.ibm.datatools.sqw.dataprep.models.pmmm' and 'org.eclipse.datatools.modelbase.sql' register a package for 'http:///org/eclipse/datatools/modelbase/sql/accesscontrol.ecore'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2019-01-10 14:12:53.304
+!MESSAGE Both 'com.ibm.datatools.sqw.dataprep.models.pmmm' and 'org.eclipse.datatools.modelbase.sql' register a package for 'http:///org/eclipse/datatools/modelbase/sql/routines.ecore'
+
+!ENTRY org.eclipse.ui.navigator 2 0 2019-01-10 14:13:05.682
+!MESSAGE There were unresolved dependencies for action provider extensions to a Common Navigator.
+Verify that the "dependsOn" attribute for each <actionProvider /> element is valid.
+Unresolved dependency specified for actionProvider: com.ibm.datatools.db2.util.ui.compressionActionProvider
+Unresolved dependency specified for actionProvider: com.ibm.datatools.project.ui.olap.Dimension_ColAttributes
+Unresolved dependency specified for actionProvider: com.ibm.datatools.project.ui.olap.FactsColMeasures
+
+!ENTRY org.eclipse.jface 2 0 2019-01-10 14:15:20.718
+!MESSAGE Ignored reentrant call while viewer is busy. This is only logged once per viewer instance, but similar calls will still be ignored.
+!STACK 0
+java.lang.RuntimeException
+	at org.eclipse.jface.viewers.ColumnViewer.checkBusy(Unknown Source)
+	at org.eclipse.jface.viewers.ColumnViewer.refresh(Unknown Source)
+	at org.eclipse.ui.navigator.CommonViewer.refresh(Unknown Source)
+	at org.eclipse.ui.navigator.CommonViewer.refresh(Unknown Source)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(Unknown Source)
+	at com.ibm.datatools.olap.ui.explorers.content.SecurityContentProvider.inputChanged(Unknown Source)
+	at org.eclipse.ui.internal.navigator.extensions.SafeDelegateTreeContentProvider$2.run(Unknown Source)
+	at org.eclipse.core.runtime.SafeRunner.run(Unknown Source)
+	at org.eclipse.ui.internal.navigator.extensions.SafeDelegateTreeContentProvider.inputChanged(Unknown Source)
+	at org.eclipse.ui.internal.navigator.extensions.StructuredViewerManager.initialize(Unknown Source)
+	at org.eclipse.ui.internal.navigator.extensions.NavigatorContentExtension.internalGetContentProvider(Unknown Source)
+	at org.eclipse.ui.internal.navigator.extensions.NavigatorContentExtension.getContentProvider(Unknown Source)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.findParents(Unknown Source)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.findPaths(Unknown Source)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.findPaths(Unknown Source)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.getParents(Unknown Source)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getParentElement(Unknown Source)
+	at org.eclipse.jface.viewers.TreeViewer.getParentElement(Unknown Source)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalExpand(Unknown Source)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.expandToLevel(Unknown Source)
+	at com.ibm.datatools.project.internal.ui.explorer.providers.content.impl.ProjectExplorerEMFAdapter.sendNewRootEvent(Unknown Source)
+	at com.ibm.datatools.core.internal.ui.services.EMFExplorerAdapters.sendNewRootEvent(Unknown Source)
+	at com.ibm.datatools.project.internal.ui.explorer.commands.NewModelAction.postProcessing(Unknown Source)
+	at com.ibm.datatools.project.internal.ui.explorer.commands.NewModelAction.makeNewDataDiagram(Unknown Source)
+	at com.ibm.datatools.project.internal.ui.explorer.commands.NewModelAction.access$1(Unknown Source)
+	at com.ibm.datatools.project.internal.ui.explorer.commands.NewModelAction$1.run(Unknown Source)
+	at com.ibm.datatools.core.commands.DataToolsNonRecordingCommand.doExecuteWithResult(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.commands.core.command.AbstractTransactionalCommand.doExecute(Unknown Source)
+	at org.eclipse.emf.workspace.AbstractEMFOperation.execute(Unknown Source)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.execute(Unknown Source)
+	at com.ibm.datatools.core.commands.DataToolsCommandManager.execute(Unknown Source)
+	at com.ibm.datatools.core.commands.DataToolsCommandManager.execute(Unknown Source)
+	at com.ibm.datatools.core.commands.DataToolsCommandManager.runCommand(Unknown Source)
+	at com.ibm.datatools.project.internal.ui.explorer.commands.NewModelAction.execute(Unknown Source)
+	at com.ibm.datatools.core.internal.ui.wizards.newphysicalmodel.NewModelWizard.executePostModelCommand(Unknown Source)
+	at com.ibm.datatools.core.internal.ui.wizards.newphysicalmodel.NewModelWizard.performFinish(Unknown Source)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(Unknown Source)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(Unknown Source)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Unknown Source)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.jface.window.Window.runEventLoop(Unknown Source)
+	at org.eclipse.jface.window.Window.open(Unknown Source)
+	at org.eclipse.ui.internal.navigator.wizards.WizardShortcutAction.run(Unknown Source)
+	at org.eclipse.jface.action.Action.runWithEvent(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$5.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
+
+!ENTRY org.eclipse.jface 4 0 2019-01-10 14:41:32.871
+!MESSAGE /icons\connection.gif
+!STACK 0
+java.io.FileNotFoundException: /icons\connection.gif
+	at org.eclipse.osgi.framework.internal.protocol.bundleentry.Handler.findBundleEntry(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.BundleResourceHandler.openConnection(Unknown Source)
+	at java.net.URL.openConnection(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.URLConverterImpl.toFileURL(Unknown Source)
+	at org.eclipse.core.runtime.FileLocator.toFileURL(Unknown Source)
+	at org.eclipse.jface.resource.URLImageDescriptor.getFilePath(Unknown Source)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(Unknown Source)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(Unknown Source)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(Unknown Source)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(Unknown Source)
+	at org.eclipse.jface.resource.ResourceManager.createImageWithDefault(Unknown Source)
+	at org.eclipse.jface.resource.ImageRegistry.get(Unknown Source)
+	at com.ibm.datatools.common.ui.DatatoolsCommonUIPlugin.getImage(Unknown Source)
+	at com.ibm.datatools.common.ui.dialogs.UserIdentification.configureShell(Unknown Source)
+	at org.eclipse.jface.window.Window.createShell(Unknown Source)
+	at org.eclipse.jface.window.Window.create(Unknown Source)
+	at org.eclipse.jface.dialogs.Dialog.create(Unknown Source)
+	at org.eclipse.jface.window.Window.open(Unknown Source)
+	at com.ibm.datatools.olap.db.api.OlapRepository.createRepositoryMetaObjectRoot(Unknown Source)
+	at com.ibm.datatools.olap.db.api.OlapRepository.startNewRoot(Unknown Source)
+	at com.ibm.datatools.olap.db.api.OlapRepository.connectAndStart(Unknown Source)
+	at com.ibm.datatools.olap.db.api.OlapRepository.loadMetadataFromRepositoryIfNeeded(Unknown Source)
+	at com.ibm.datatools.olap.ui.explorers.content.OLAPContentProvider2.getChildren(Unknown Source)
+	at com.ibm.datatools.olap.ui.explorers.content.OLAPContentProvider2.getChildren(Unknown Source)
+	at org.eclipse.ui.internal.navigator.extensions.SafeDelegateTreeContentProvider.getChildren(Unknown Source)
+	at org.eclipse.ui.internal.navigator.extensions.SafeDelegateTreeContentProvider.getChildren(Unknown Source)
+	at org.eclipse.ui.internal.navigator.extensions.SafeDelegateTreeContentProvider.getChildren(Unknown Source)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.internalGetChildren(Unknown Source)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.getChildren(Unknown Source)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getRawChildren(Unknown Source)
+	at org.eclipse.jface.viewers.TreeViewer.getRawChildren(Unknown Source)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getFilteredChildren(Unknown Source)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getSortedChildren(Unknown Source)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$1.run(Unknown Source)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(Unknown Source)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(Unknown Source)
+	at org.eclipse.jface.viewers.TreeViewer.createChildren(Unknown Source)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.handleTreeExpand(Unknown Source)
+	at org.eclipse.jface.viewers.TreeViewer.handleTreeExpand(Unknown Source)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$4.treeExpanded(Unknown Source)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Tree.wmNotifyChild(Unknown Source)
+	at org.eclipse.swt.widgets.Control.wmNotify(Unknown Source)
+	at org.eclipse.swt.widgets.Composite.wmNotify(Unknown Source)
+	at org.eclipse.swt.widgets.Control.WM_NOTIFY(Unknown Source)
+	at org.eclipse.swt.widgets.Control.windowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Display.windowProc(Unknown Source)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Tree.callWindowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Tree.WM_LBUTTONDOWN(Unknown Source)
+	at org.eclipse.swt.widgets.Control.windowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Tree.windowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Display.windowProc(Unknown Source)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$5.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
+
+!ENTRY org.eclipse.jface 2 0 2019-01-10 14:41:32.871
+!MESSAGE The image could not be loaded: URLImageDescriptor(bundleentry://59/icons\connection.gif)
+!STACK 0
+org.eclipse.jface.resource.DeviceResourceException: Unable to create resource URLImageDescriptor(bundleentry://59/icons\connection.gif)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(Unknown Source)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(Unknown Source)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(Unknown Source)
+	at org.eclipse.jface.resource.ResourceManager.createImageWithDefault(Unknown Source)
+	at org.eclipse.jface.resource.ImageRegistry.get(Unknown Source)
+	at com.ibm.datatools.common.ui.DatatoolsCommonUIPlugin.getImage(Unknown Source)
+	at com.ibm.datatools.common.ui.dialogs.UserIdentification.configureShell(Unknown Source)
+	at org.eclipse.jface.window.Window.createShell(Unknown Source)
+	at org.eclipse.jface.window.Window.create(Unknown Source)
+	at org.eclipse.jface.dialogs.Dialog.create(Unknown Source)
+	at org.eclipse.jface.window.Window.open(Unknown Source)
+	at com.ibm.datatools.olap.db.api.OlapRepository.createRepositoryMetaObjectRoot(Unknown Source)
+	at com.ibm.datatools.olap.db.api.OlapRepository.startNewRoot(Unknown Source)
+	at com.ibm.datatools.olap.db.api.OlapRepository.connectAndStart(Unknown Source)
+	at com.ibm.datatools.olap.db.api.OlapRepository.loadMetadataFromRepositoryIfNeeded(Unknown Source)
+	at com.ibm.datatools.olap.ui.explorers.content.OLAPContentProvider2.getChildren(Unknown Source)
+	at com.ibm.datatools.olap.ui.explorers.content.OLAPContentProvider2.getChildren(Unknown Source)
+	at org.eclipse.ui.internal.navigator.extensions.SafeDelegateTreeContentProvider.getChildren(Unknown Source)
+	at org.eclipse.ui.internal.navigator.extensions.SafeDelegateTreeContentProvider.getChildren(Unknown Source)
+	at org.eclipse.ui.internal.navigator.extensions.SafeDelegateTreeContentProvider.getChildren(Unknown Source)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.internalGetChildren(Unknown Source)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.getChildren(Unknown Source)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getRawChildren(Unknown Source)
+	at org.eclipse.jface.viewers.TreeViewer.getRawChildren(Unknown Source)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getFilteredChildren(Unknown Source)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getSortedChildren(Unknown Source)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$1.run(Unknown Source)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(Unknown Source)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(Unknown Source)
+	at org.eclipse.jface.viewers.TreeViewer.createChildren(Unknown Source)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.handleTreeExpand(Unknown Source)
+	at org.eclipse.jface.viewers.TreeViewer.handleTreeExpand(Unknown Source)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$4.treeExpanded(Unknown Source)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Tree.wmNotifyChild(Unknown Source)
+	at org.eclipse.swt.widgets.Control.wmNotify(Unknown Source)
+	at org.eclipse.swt.widgets.Composite.wmNotify(Unknown Source)
+	at org.eclipse.swt.widgets.Control.WM_NOTIFY(Unknown Source)
+	at org.eclipse.swt.widgets.Control.windowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Display.windowProc(Unknown Source)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Tree.callWindowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Tree.WM_LBUTTONDOWN(Unknown Source)
+	at org.eclipse.swt.widgets.Control.windowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Tree.windowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Display.windowProc(Unknown Source)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$5.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
+
+!ENTRY org.eclipse.ui.console 4 2 2019-01-10 14:46:55.330
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.console".
+!STACK 0
+org.eclipse.swt.SWTException: Device is disposed
+	at org.eclipse.swt.SWT.error(Unknown Source)
+	at org.eclipse.swt.SWT.error(Unknown Source)
+	at org.eclipse.swt.SWT.error(Unknown Source)
+	at org.eclipse.swt.widgets.Display.error(Unknown Source)
+	at org.eclipse.swt.widgets.Display.asyncExec(Unknown Source)
+	at org.eclipse.ui.internal.console.ConsoleDropDownAction.consolesRemoved(Unknown Source)
+	at org.eclipse.ui.internal.console.ConsoleManager$ConsoleNotifier.run(Unknown Source)
+	at org.eclipse.core.runtime.SafeRunner.run(Unknown Source)
+	at org.eclipse.ui.internal.console.ConsoleManager$ConsoleNotifier.notify(Unknown Source)
+	at org.eclipse.ui.internal.console.ConsoleManager.fireUpdate(Unknown Source)
+	at org.eclipse.ui.internal.console.ConsoleManager.removeConsoles(Unknown Source)
+	at org.eclipse.ui.console.ConsolePlugin.stop(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.SystemBundle.suspend(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.OSGi.close(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
+
+!ENTRY org.eclipse.ui.console 4 120 2019-01-10 14:46:55.330
+!MESSAGE An exception occurred during console notification
+!STACK 0
+org.eclipse.swt.SWTException: Device is disposed
+	at org.eclipse.swt.SWT.error(Unknown Source)
+	at org.eclipse.swt.SWT.error(Unknown Source)
+	at org.eclipse.swt.SWT.error(Unknown Source)
+	at org.eclipse.swt.widgets.Display.error(Unknown Source)
+	at org.eclipse.swt.widgets.Display.asyncExec(Unknown Source)
+	at org.eclipse.ui.internal.console.ConsoleDropDownAction.consolesRemoved(Unknown Source)
+	at org.eclipse.ui.internal.console.ConsoleManager$ConsoleNotifier.run(Unknown Source)
+	at org.eclipse.core.runtime.SafeRunner.run(Unknown Source)
+	at org.eclipse.ui.internal.console.ConsoleManager$ConsoleNotifier.notify(Unknown Source)
+	at org.eclipse.ui.internal.console.ConsoleManager.fireUpdate(Unknown Source)
+	at org.eclipse.ui.internal.console.ConsoleManager.removeConsoles(Unknown Source)
+	at org.eclipse.ui.console.ConsolePlugin.stop(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.SystemBundle.suspend(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.OSGi.close(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
+!SESSION 2019-01-10 14:47:00.205 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=J2RE 1.6.0 IBM J9 2.4 Windows Vista x86-32 jvmwi3260sr5-20090519_35743 (JIT enabled, AOT enabled)
+J9VM - 20090519_035743_lHdSMr
+JIT  - r9_20090518_2017
+GC   - 20090417_AA
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_IN
+Framework arguments:  -product com.ibm.datatools.sqw.product.ifwhluw.ifwhluw
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ibm.datatools.sqw.product.ifwhluw.ifwhluw
+
+!ENTRY org.eclipse.emf.ecore 2 0 2019-01-10 14:47:06.939
+!MESSAGE Both 'com.ibm.datatools.sqw.dataprep.models.pmmm' and 'org.eclipse.datatools.modelbase.sql' register a package for 'http:///org/eclipse/datatools/modelbase/sql/schema.ecore'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2019-01-10 14:47:06.939
+!MESSAGE Both 'com.ibm.datatools.sqw.dataprep.models.pmmm' and 'org.eclipse.datatools.modelbase.sql' register a package for 'http:///org/eclipse/datatools/modelbase/sql/tables.ecore'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2019-01-10 14:47:06.939
+!MESSAGE Both 'com.ibm.datatools.sqw.dataprep.models.pmmm' and 'org.eclipse.datatools.modelbase.sql' register a package for 'http:///org/eclipse/datatools/modelbase/sql/constraints.ecore'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2019-01-10 14:47:06.939
+!MESSAGE Both 'com.ibm.datatools.sqw.dataprep.models.pmmm' and 'org.eclipse.datatools.modelbase.sql' register a package for 'http:///org/eclipse/datatools/modelbase/sql/datatypes.ecore'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2019-01-10 14:47:06.939
+!MESSAGE Both 'com.ibm.datatools.sqw.dataprep.models.pmmm' and 'org.eclipse.datatools.modelbase.sql' register a package for 'http:///org/eclipse/datatools/modelbase/sql/expressions.ecore'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2019-01-10 14:47:06.939
+!MESSAGE Both 'com.ibm.datatools.sqw.dataprep.models.pmmm' and 'org.eclipse.datatools.modelbase.sql' register a package for 'http:///org/eclipse/datatools/modelbase/sql/statements.ecore'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2019-01-10 14:47:06.939
+!MESSAGE Both 'com.ibm.datatools.sqw.dataprep.models.pmmm' and 'org.eclipse.datatools.modelbase.sql' register a package for 'http:///org/eclipse/datatools/modelbase/sql/accesscontrol.ecore'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2019-01-10 14:47:06.939
+!MESSAGE Both 'com.ibm.datatools.sqw.dataprep.models.pmmm' and 'org.eclipse.datatools.modelbase.sql' register a package for 'http:///org/eclipse/datatools/modelbase/sql/routines.ecore'
+
+!ENTRY org.eclipse.ui.navigator 2 0 2019-01-10 14:47:10.533
+!MESSAGE There were unresolved dependencies for action provider extensions to a Common Navigator.
+Verify that the "dependsOn" attribute for each <actionProvider /> element is valid.
+Unresolved dependency specified for actionProvider: com.ibm.datatools.db2.util.ui.compressionActionProvider
+Unresolved dependency specified for actionProvider: com.ibm.datatools.project.ui.olap.Dimension_ColAttributes
+Unresolved dependency specified for actionProvider: com.ibm.datatools.project.ui.olap.FactsColMeasures
+
+!ENTRY org.eclipse.jface 2 0 2019-01-10 14:53:10.228
+!MESSAGE Ignored reentrant call while viewer is busy. This is only logged once per viewer instance, but similar calls will still be ignored.
+!STACK 0
+java.lang.RuntimeException
+	at org.eclipse.jface.viewers.ColumnViewer.checkBusy(Unknown Source)
+	at org.eclipse.jface.viewers.ColumnViewer.refresh(Unknown Source)
+	at org.eclipse.ui.navigator.CommonViewer.refresh(Unknown Source)
+	at org.eclipse.ui.navigator.CommonViewer.refresh(Unknown Source)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(Unknown Source)
+	at com.ibm.datatools.olap.ui.explorers.content.SecurityContentProvider.inputChanged(Unknown Source)
+	at org.eclipse.ui.internal.navigator.extensions.SafeDelegateTreeContentProvider$2.run(Unknown Source)
+	at org.eclipse.core.runtime.SafeRunner.run(Unknown Source)
+	at org.eclipse.ui.internal.navigator.extensions.SafeDelegateTreeContentProvider.inputChanged(Unknown Source)
+	at org.eclipse.ui.internal.navigator.extensions.StructuredViewerManager.initialize(Unknown Source)
+	at org.eclipse.ui.internal.navigator.extensions.NavigatorContentExtension.internalGetContentProvider(Unknown Source)
+	at org.eclipse.ui.internal.navigator.extensions.NavigatorContentExtension.getContentProvider(Unknown Source)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.findParents(Unknown Source)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.findPaths(Unknown Source)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.findPaths(Unknown Source)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.getParents(Unknown Source)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getParentElement(Unknown Source)
+	at org.eclipse.jface.viewers.TreeViewer.getParentElement(Unknown Source)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalExpand(Unknown Source)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.expandToLevel(Unknown Source)
+	at com.ibm.datatools.project.internal.ui.explorer.providers.content.impl.ProjectExplorerEMFAdapter.sendNewRootEvent(Unknown Source)
+	at com.ibm.datatools.core.internal.ui.services.EMFExplorerAdapters.sendNewRootEvent(Unknown Source)
+	at com.ibm.datatools.project.internal.ui.explorer.commands.NewModelAction.postProcessing(Unknown Source)
+	at com.ibm.datatools.project.internal.ui.explorer.commands.NewModelAction.makeNewDataDiagram(Unknown Source)
+	at com.ibm.datatools.project.internal.ui.explorer.commands.NewModelAction.access$1(Unknown Source)
+	at com.ibm.datatools.project.internal.ui.explorer.commands.NewModelAction$1.run(Unknown Source)
+	at com.ibm.datatools.core.commands.DataToolsNonRecordingCommand.doExecuteWithResult(Unknown Source)
+	at org.eclipse.gmf.runtime.emf.commands.core.command.AbstractTransactionalCommand.doExecute(Unknown Source)
+	at org.eclipse.emf.workspace.AbstractEMFOperation.execute(Unknown Source)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.execute(Unknown Source)
+	at com.ibm.datatools.core.commands.DataToolsCommandManager.execute(Unknown Source)
+	at com.ibm.datatools.core.commands.DataToolsCommandManager.execute(Unknown Source)
+	at com.ibm.datatools.core.commands.DataToolsCommandManager.runCommand(Unknown Source)
+	at com.ibm.datatools.project.internal.ui.explorer.commands.NewModelAction.execute(Unknown Source)
+	at com.ibm.datatools.core.internal.ui.wizards.newphysicalmodel.NewModelWizard.executePostModelCommand(Unknown Source)
+	at com.ibm.datatools.core.internal.ui.wizards.newphysicalmodel.NewModelWizard.performFinish(Unknown Source)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(Unknown Source)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(Unknown Source)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Unknown Source)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.jface.window.Window.runEventLoop(Unknown Source)
+	at org.eclipse.jface.window.Window.open(Unknown Source)
+	at org.eclipse.ui.internal.navigator.wizards.WizardShortcutAction.run(Unknown Source)
+	at org.eclipse.jface.action.Action.runWithEvent(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$5.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
+
+!ENTRY org.eclipse.osgi 2 1 2019-01-10 15:28:17.426
+!MESSAGE NLS unused message: _UI_DIALOG_SELECT_OUTPUT_DIRECTORY in: com.ibm.ccl.xtt.sqlxml.ui.extract.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-01-10 15:28:17.426
+!MESSAGE NLS unused message: _ERROR_XML_GENERATION in: com.ibm.ccl.xtt.sqlxml.ui.extract.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-01-10 15:28:17.426
+!MESSAGE NLS unused message: _ERROR_ILLEGAL_XML_CHAR in: com.ibm.ccl.xtt.sqlxml.ui.extract.messages
+
+!ENTRY org.eclipse.ui.console 4 2 2019-01-10 16:45:44.963
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.console".
+!STACK 0
+org.eclipse.swt.SWTException: Device is disposed
+	at org.eclipse.swt.SWT.error(Unknown Source)
+	at org.eclipse.swt.SWT.error(Unknown Source)
+	at org.eclipse.swt.SWT.error(Unknown Source)
+	at org.eclipse.swt.widgets.Display.error(Unknown Source)
+	at org.eclipse.swt.widgets.Display.asyncExec(Unknown Source)
+	at org.eclipse.ui.internal.console.ConsoleDropDownAction.consolesRemoved(Unknown Source)
+	at org.eclipse.ui.internal.console.ConsoleManager$ConsoleNotifier.run(Unknown Source)
+	at org.eclipse.core.runtime.SafeRunner.run(Unknown Source)
+	at org.eclipse.ui.internal.console.ConsoleManager$ConsoleNotifier.notify(Unknown Source)
+	at org.eclipse.ui.internal.console.ConsoleManager.fireUpdate(Unknown Source)
+	at org.eclipse.ui.internal.console.ConsoleManager.removeConsoles(Unknown Source)
+	at org.eclipse.ui.console.ConsolePlugin.stop(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.SystemBundle.suspend(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.OSGi.close(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
+
+!ENTRY org.eclipse.ui.console 4 120 2019-01-10 16:45:45.003
+!MESSAGE An exception occurred during console notification
+!STACK 0
+org.eclipse.swt.SWTException: Device is disposed
+	at org.eclipse.swt.SWT.error(Unknown Source)
+	at org.eclipse.swt.SWT.error(Unknown Source)
+	at org.eclipse.swt.SWT.error(Unknown Source)
+	at org.eclipse.swt.widgets.Display.error(Unknown Source)
+	at org.eclipse.swt.widgets.Display.asyncExec(Unknown Source)
+	at org.eclipse.ui.internal.console.ConsoleDropDownAction.consolesRemoved(Unknown Source)
+	at org.eclipse.ui.internal.console.ConsoleManager$ConsoleNotifier.run(Unknown Source)
+	at org.eclipse.core.runtime.SafeRunner.run(Unknown Source)
+	at org.eclipse.ui.internal.console.ConsoleManager$ConsoleNotifier.notify(Unknown Source)
+	at org.eclipse.ui.internal.console.ConsoleManager.fireUpdate(Unknown Source)
+	at org.eclipse.ui.internal.console.ConsoleManager.removeConsoles(Unknown Source)
+	at org.eclipse.ui.console.ConsolePlugin.stop(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.SystemBundle.suspend(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.OSGi.close(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.main(Unknown Source)

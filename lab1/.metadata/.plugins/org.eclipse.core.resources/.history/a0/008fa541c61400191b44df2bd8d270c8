@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<xmi:XMI xmlns:datamodelversion="http://www.ibm.com/com.ibm.datatools.core/model/7.5.2.0" xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DB2Model="http:///com/ibm/db/models/db2/db2.ecore" xmlns:LUW="http:///com/ibm/db/models/db2/luw.ecore" xmlns:SQLConstraints="http:///org/eclipse/datatools/modelbase/sql/constraints.ecore" xmlns:SQLDataTypes="http:///org/eclipse/datatools/modelbase/sql/datatypes.ecore" xmlns:datanotation="http:///datanotation.ecore">
+  <LUW:LUWDatabase xmi:id="_V4jQARS5EemDbIUciJ-4qg" name="Database" vendor="DB2 UDB" version="V8.2" schemas="_V9BgUBS5EemDbIUciJ-4qg"/>
+  <DB2Model:DB2Schema xmi:id="_V9BgUBS5EemDbIUciJ-4qg" name="Q1228" tables="_loghwBS5EemDbIUciJ-4qg _rLxWABS5EemDbIUciJ-4qg _vaDUUBS5EemDbIUciJ-4qg _xYYpQBS5EemDbIUciJ-4qg _ytxH0BS5EemDbIUciJ-4qg" database="_V4jQARS5EemDbIUciJ-4qg">
+    <eAnnotations xmi:id="_V9xHMBS5EemDbIUciJ-4qg" source="diagram">
+      <contents xsi:type="datanotation:DataDiagram" xmi:id="_V9xHMRS5EemDbIUciJ-4qg" type="IE_CrowFoot" name="Diagram1" viewKind="ProjectExplorer" notation="IE_CrowFoot" kind="Physical">
+        <styles xsi:type="datanotation:DataAttributeStyle" xmi:id="_V9xHMhS5EemDbIUciJ-4qg"/>
+        <styles xsi:type="datanotation:DataCompartmentStyle" xmi:id="_V9xHMxS5EemDbIUciJ-4qg"/>
+        <styles xsi:type="datanotation:DataDisplayStyle" xmi:id="_V9xHNBS5EemDbIUciJ-4qg"/>
+        <styles xsi:type="datanotation:DataDiagramRelationshipStyle" xmi:id="_V9xHNRS5EemDbIUciJ-4qg"/>
+        <styles xsi:type="datanotation:DataShapeNameStyle" xmi:id="_V9xHNhS5EemDbIUciJ-4qg"/>
+        <styles xsi:type="datanotation:DataDiagramFormattingStyle" xmi:id="_V9xHNxS5EemDbIUciJ-4qg"/>
+        <element xsi:nil="true"/>
+      </contents>
+    </eAnnotations>
+  </DB2Model:DB2Schema>
+  <LUW:LUWTable xmi:id="_loghwBS5EemDbIUciJ-4qg" name="DEPARTMENT" schema="_V9BgUBS5EemDbIUciJ-4qg" referencingForeignKeys="_jEeM0BS7EemDbIUciJ-4qg _FeaRcBS8EemDbIUciJ-4qg">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_8P-d4BS5EemDbIUciJ-4qg" name="DEPTID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_-Vex0BS5EemDbIUciJ-4qg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="32"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="__bhM0BS5EemDbIUciJ-4qg" name="DNAME">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_BLcSUBS6EemDbIUciJ-4qg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="32"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_DuA8wBS6EemDbIUciJ-4qg" name="LOCATION">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_FhLjgBS6EemDbIUciJ-4qg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="32"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_CrP4MBS6EemDbIUciJ-4qg" name="DEPARTMENT_PK" members="_8P-d4BS5EemDbIUciJ-4qg" ForeignKey="_jEeM0BS7EemDbIUciJ-4qg _FeaRcBS8EemDbIUciJ-4qg"/>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_rLxWABS5EemDbIUciJ-4qg" name="STUDENT" schema="_V9BgUBS5EemDbIUciJ-4qg" referencingForeignKeys="_hElGwBS9EemDbIUciJ-4qg">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_JCVWEBS6EemDbIUciJ-4qg" name="SNUM" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_OvSR0BS6EemDbIUciJ-4qg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="32"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_TkK9IBS6EemDbIUciJ-4qg" name="SNAME">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_U7LzYBS6EemDbIUciJ-4qg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="32"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_WhlwgBS6EemDbIUciJ-4qg" name="SLEVEL">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_d9h9oBS6EemDbIUciJ-4qg" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_e0py4BS6EemDbIUciJ-4qg" name="AGE">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_hGFC8BS6EemDbIUciJ-4qg" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_cJohoBS7EemDbIUciJ-4qg" name="DEPTID">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_dDRfYBS7EemDbIUciJ-4qg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="32"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_S0fMoBS6EemDbIUciJ-4qg" name="STUDENT_PK" members="_JCVWEBS6EemDbIUciJ-4qg" ForeignKey="_hElGwBS9EemDbIUciJ-4qg"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_jEeM0BS7EemDbIUciJ-4qg" name="STUDE_DEPARTME_FK" members="_cJohoBS7EemDbIUciJ-4qg" onDelete="CASCADE" uniqueConstraint="_CrP4MBS6EemDbIUciJ-4qg" referencedTable="_loghwBS5EemDbIUciJ-4qg">
+      <eAnnotations xmi:id="_jEeM0RS7EemDbIUciJ-4qg" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_jEeM0hS7EemDbIUciJ-4qg" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
+        <details xmi:id="_jEeM0xS7EemDbIUciJ-4qg" key="FK_CHILD_MULTIPLICITY" value=""/>
+        <details xmi:id="_jEeM1BS7EemDbIUciJ-4qg" key="FK_CHILD_ROLE_NAME" value="Verb1"/>
+        <details xmi:id="_jEeM1RS7EemDbIUciJ-4qg" key="FK_PARENT_MULTIPLICITY" value=""/>
+        <details xmi:id="_jEeM1hS7EemDbIUciJ-4qg" key="FK_PARENT_ROLE_NAME" value=""/>
+      </eAnnotations>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_vaDUUBS5EemDbIUciJ-4qg" name="ENROLLED" schema="_V9BgUBS5EemDbIUciJ-4qg">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_LbiMoBS7EemDbIUciJ-4qg" name="GRADE">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_N1peoBS7EemDbIUciJ-4qg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="32"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_MxHqEBS8EemDbIUciJ-4qg" name="CNAME" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_O16MUBS8EemDbIUciJ-4qg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="32"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_P_V5kBS8EemDbIUciJ-4qg" name="SNUM" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_SITxMBS8EemDbIUciJ-4qg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="32"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_bXFYcBS9EemDbIUciJ-4qg" name="ENROLLED_PK" members="_MxHqEBS8EemDbIUciJ-4qg _P_V5kBS8EemDbIUciJ-4qg"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_dbrGYBS9EemDbIUciJ-4qg" name="ENROLLED_CLASS_FK" members="_MxHqEBS8EemDbIUciJ-4qg" onDelete="CASCADE" uniqueConstraint="_LHn8sBS8EemDbIUciJ-4qg" referencedTable="_xYYpQBS5EemDbIUciJ-4qg">
+      <eAnnotations xmi:id="_dbrGYRS9EemDbIUciJ-4qg" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_dbrGYhS9EemDbIUciJ-4qg" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
+        <details xmi:id="_dbrGYxS9EemDbIUciJ-4qg" key="FK_CHILD_MULTIPLICITY" value=""/>
+        <details xmi:id="_dbrGZBS9EemDbIUciJ-4qg" key="FK_CHILD_ROLE_NAME" value="Verb1"/>
+        <details xmi:id="_dbrGZRS9EemDbIUciJ-4qg" key="FK_PARENT_MULTIPLICITY" value=""/>
+        <details xmi:id="_dbrGZhS9EemDbIUciJ-4qg" key="FK_PARENT_ROLE_NAME" value=""/>
+      </eAnnotations>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_hElGwBS9EemDbIUciJ-4qg" name="ENROLLE_STUDEN_FK" members="_P_V5kBS8EemDbIUciJ-4qg" onDelete="CASCADE" uniqueConstraint="_S0fMoBS6EemDbIUciJ-4qg" referencedTable="_rLxWABS5EemDbIUciJ-4qg">
+      <eAnnotations xmi:id="_hElGwRS9EemDbIUciJ-4qg" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_hElGwhS9EemDbIUciJ-4qg" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
+        <details xmi:id="_hElGwxS9EemDbIUciJ-4qg" key="FK_CHILD_MULTIPLICITY" value=""/>
+        <details xmi:id="_hElGxBS9EemDbIUciJ-4qg" key="FK_CHILD_ROLE_NAME" value="Verb1"/>
+        <details xmi:id="_hElGxRS9EemDbIUciJ-4qg" key="FK_PARENT_MULTIPLICITY" value=""/>
+        <details xmi:id="_hElGxhS9EemDbIUciJ-4qg" key="FK_PARENT_ROLE_NAME" value=""/>
+      </eAnnotations>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_xYYpQBS5EemDbIUciJ-4qg" name="CLASS" schema="_V9BgUBS5EemDbIUciJ-4qg" referencingForeignKeys="_dbrGYBS9EemDbIUciJ-4qg">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_xxDLcBS6EemDbIUciJ-4qg" name="CNAME" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_ze0U0BS6EemDbIUciJ-4qg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="32"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_B8yaQBS7EemDbIUciJ-4qg" name="TIME">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" xmi:id="_C0F1sBS7EemDbIUciJ-4qg" name="TIME" primitiveType="TIME"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_FWVwABS7EemDbIUciJ-4qg" name="ROOM">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_HXE4sBS7EemDbIUciJ-4qg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="32"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_yjsT4BS7EemDbIUciJ-4qg" name="FID">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_2fvSsBS7EemDbIUciJ-4qg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="32"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_4Rs_kBS7EemDbIUciJ-4qg" name="CLASS_FACULTY_FK" members="_yjsT4BS7EemDbIUciJ-4qg" onDelete="CASCADE" uniqueConstraint="_ja-dwBS6EemDbIUciJ-4qg" referencedTable="_ytxH0BS5EemDbIUciJ-4qg">
+      <eAnnotations xmi:id="_4Rs_kRS7EemDbIUciJ-4qg" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_4Rs_khS7EemDbIUciJ-4qg" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
+        <details xmi:id="_4Rs_kxS7EemDbIUciJ-4qg" key="FK_CHILD_MULTIPLICITY" value=""/>
+        <details xmi:id="_4Rs_lBS7EemDbIUciJ-4qg" key="FK_CHILD_ROLE_NAME" value="Verb1"/>
+        <details xmi:id="_4Rs_lRS7EemDbIUciJ-4qg" key="FK_PARENT_MULTIPLICITY" value=""/>
+        <details xmi:id="_4Rs_lhS7EemDbIUciJ-4qg" key="FK_PARENT_ROLE_NAME" value=""/>
+      </eAnnotations>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_LHn8sBS8EemDbIUciJ-4qg" name="CLASS_PK" members="_xxDLcBS6EemDbIUciJ-4qg" ForeignKey="_dbrGYBS9EemDbIUciJ-4qg"/>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_ytxH0BS5EemDbIUciJ-4qg" name="FACULTY" schema="_V9BgUBS5EemDbIUciJ-4qg" referencingForeignKeys="_4Rs_kBS7EemDbIUciJ-4qg">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_jZVfABS6EemDbIUciJ-4qg" name="FID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_kuhwUBS6EemDbIUciJ-4qg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="32"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_mdkFABS6EemDbIUciJ-4qg" name="FNAME">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_rmxagBS6EemDbIUciJ-4qg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="32"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_B-B68BS8EemDbIUciJ-4qg" name="DEPTID">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_DiSjABS8EemDbIUciJ-4qg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="32"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_ja-dwBS6EemDbIUciJ-4qg" name="FACULTY_PK" members="_jZVfABS6EemDbIUciJ-4qg" ForeignKey="_4Rs_kBS7EemDbIUciJ-4qg"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_FeaRcBS8EemDbIUciJ-4qg" name="FACUL_DEPARTME_FK" members="_B-B68BS8EemDbIUciJ-4qg" onDelete="CASCADE" uniqueConstraint="_CrP4MBS6EemDbIUciJ-4qg" referencedTable="_loghwBS5EemDbIUciJ-4qg">
+      <eAnnotations xmi:id="_FeaRcRS8EemDbIUciJ-4qg" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_FeaRchS8EemDbIUciJ-4qg" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
+        <details xmi:id="_FeaRcxS8EemDbIUciJ-4qg" key="FK_CHILD_MULTIPLICITY" value=""/>
+        <details xmi:id="_FeaRdBS8EemDbIUciJ-4qg" key="FK_CHILD_ROLE_NAME" value="Verb1"/>
+        <details xmi:id="_FeaRdRS8EemDbIUciJ-4qg" key="FK_PARENT_MULTIPLICITY" value=""/>
+        <details xmi:id="_FeaRdhS8EemDbIUciJ-4qg" key="FK_PARENT_ROLE_NAME" value=""/>
+      </eAnnotations>
+    </constraints>
+  </LUW:LUWTable>
+</xmi:XMI>
