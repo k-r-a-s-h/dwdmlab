@@ -1,0 +1,32 @@
+ Data-Flows  17 Jan, 2019 3:14:05 PM   SQW03415I: Flow execution started for SQW001 (/Q1/data-flows/Q1ADWFLOW)
+ Data-Flows  17 Jan, 2019 3:14:05 PM   SQW38501I: Execution log file:  D:/160911228/lab1/Q1/run-profiles/logs/Q1ADWFLOW_SQW001.txt
+ Data-Flows  17 Jan, 2019 3:14:05 PM   SQW38509I: Execution temporary work directory:  D:/160911228/lab1/Q1/run-profiles/tmp\Q1ADWFLOW_SQW001
+ Data-Flows  17 Jan, 2019 3:14:09 PM   SQW03275I: Execution of SQL statement "SET CURRENT SCHEMA "IWSCHEMA3247ED_2"" through JDBC connection finished successfully
+ Data-Flows  17 Jan, 2019 3:14:09 PM   SQW03275I: Execution of SQL statement "SELECT Q31.GRADE AS GRADE, Q31.CNAME AS CNAME, Q31.SNUM AS SNUM
+  FROM Q1228.ENROLLED Q31
+  WHERE (Q31.GRADE = 'A')" through JDBC connection finished successfully
+ Data-Flows  17 Jan, 2019 3:14:09 PM   SQW03368I: Dumping variable values : 
+     ${INT-RES/RUN-ID} = 3247ED
+     ${RESERVED/APP_NAME} = Q1ADWFLOW
+     ${RESERVED/APP_PATH} = D:/160911228/lab1/Q1/run-profiles/rp322047/
+     ${RESERVED/CURRENT_TIMESTAMP} = 2019-01-17 15:14:08
+     ${RESERVED/DATE} = 2019-01-17
+     ${RESERVED/DAYNAME_SHORT} = Thu
+     ${RESERVED/DAYNAME} = Thursday
+     ${RESERVED/DAY} = 17
+     ${RESERVED/INSTANCE_NAME} = SQW001
+     ${RESERVED/MISC_DIR} = D:/160911228/lab1\Q1\package-misc\
+     ${RESERVED/MONTHNAME_SHORT} = Jan
+     ${RESERVED/MONTHNAME} = January
+     ${RESERVED/MONTH} = 01
+     ${RESERVED/PROC_NAME} = Q1ADWFLOW
+     ${RESERVED/RUN_ID} = 3247ED
+     ${RESERVED/START_TIMESTAMP} = 2019-01-17 15:14:08
+     ${RESERVED/TIME} = 15:14:08
+     ${RESERVED/TMP_DIR} = D:/160911228/lab1/Q1/run-profiles/tmp\Q1ADWFLOW_SQW001
+     ${RESERVED/USER_DIR} = C:\Program Files\IBM\ISWarehouse\ds
+     ${RESERVED/USER_HOME} = C:\Users\STUDENT
+     ${RESERVED/USER_NAME} = STUDENT
+     ${RESERVED/YEAR} = 2019
+ Data-Flows  17 Jan, 2019 3:14:09 PM   SQW03408I: Flow execution finished for SQW001 (/Q1/data-flows/Q1ADWFLOW)
+ Data-Flows  17 Jan, 2019 3:14:09 PM   SQW38508I: Closing log file D:/160911228/lab1/Q1/run-profiles/logs/Q1ADWFLOW_SQW001.txt.

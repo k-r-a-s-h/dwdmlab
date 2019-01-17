@@ -1,0 +1,41 @@
+ Data-Flows  17 Jan, 2019 3:41:57 PM   SQW03415I: Flow execution started for SQW003 (/Q1/data-flows/Q1ADWFLOW)
+ Data-Flows  17 Jan, 2019 3:41:57 PM   SQW38501I: Execution log file:  D:/160911228/lab1/Q1/run-profiles/logs/Q1ADWFLOW_SQW003.txt
+ Data-Flows  17 Jan, 2019 3:41:57 PM   SQW38509I: Execution temporary work directory:  D:/160911228/lab1/Q1/run-profiles/tmp\Q1ADWFLOW_SQW003
+ Data-Flows  17 Jan, 2019 3:42:00 PM   SQW03275I: Execution of SQL statement "SET CURRENT SCHEMA "IWSCHEMA4BC944_f"" through JDBC connection finished successfully
+ Data-Flows  17 Jan, 2019 3:42:00 PM   SQW03276E: Execution of SQL statement "INSERT INTO Q1228.RESULT (SNUM, CNAME)
+  SELECT Q542.SNUM AS SNUM, Q546.SNAME AS SNAME
+    FROM (SELECT Q221.SNUM AS SNUM
+            FROM (SELECT Q31.SNUM AS SNUM
+                    FROM Q1228.ENROLLED Q31
+                    WHERE (Q31.GRADE = 'A')) Q221
+          EXCEPT
+          SELECT Q228.SNUM AS SNUM
+            FROM (SELECT Q101.SNUM AS SNUM
+                    FROM Q1228.ENROLLED Q101
+                    WHERE (Q101.GRADE <> 'A')) Q228) Q542, Q1228.STUDENT Q546
+    WHERE (Q546.SNUM = Q542.SNUM)" through JDBC connection failed. Exception: SQL Exception. SQL state = 42704; error code = -204; error Message = "Q1228.RESULT" is an undefined name.. SQLCODE=-204, SQLSTATE=42704, DRIVER=4.7.89SQL Exception. SQL state = 56098; error code = -727; error Message = An error occurred during implicit system action type "2". Information returned for the error includes SQLCODE "-204", SQLSTATE "42704" and message tokens "Q1228.RESULT".. SQLCODE=-727, SQLSTATE=56098, DRIVER=4.7.89SQL Exception. SQL state = 56098; error code = -727; error Message = An error occurred during implicit system action type "2". Information returned for the error includes SQLCODE "-204", SQLSTATE "42704" and message tokens "Q1228.RESULT".. SQLCODE=-727, SQLSTATE=56098, DRIVER=4.7.89
+ Data-Flows  17 Jan, 2019 3:42:00 PM   SQW03368I: Dumping variable values : 
+     ${INT-RES/RUN-ID} = 4BC944
+     ${RESERVED/APP_NAME} = Q1ADWFLOW
+     ${RESERVED/APP_PATH} = D:/160911228/lab1/Q1/run-profiles/rp4bb83f/
+     ${RESERVED/CURRENT_TIMESTAMP} = 2019-01-17 15:42:00
+     ${RESERVED/DATE} = 2019-01-17
+     ${RESERVED/DAYNAME_SHORT} = Thu
+     ${RESERVED/DAYNAME} = Thursday
+     ${RESERVED/DAY} = 17
+     ${RESERVED/INSTANCE_NAME} = SQW003
+     ${RESERVED/MISC_DIR} = D:/160911228/lab1\Q1\package-misc\
+     ${RESERVED/MONTHNAME_SHORT} = Jan
+     ${RESERVED/MONTHNAME} = January
+     ${RESERVED/MONTH} = 01
+     ${RESERVED/PROC_NAME} = Q1ADWFLOW
+     ${RESERVED/RUN_ID} = 4BC944
+     ${RESERVED/START_TIMESTAMP} = 2019-01-17 15:41:59
+     ${RESERVED/TIME} = 15:41:59
+     ${RESERVED/TMP_DIR} = D:/160911228/lab1/Q1/run-profiles/tmp\Q1ADWFLOW_SQW003
+     ${RESERVED/USER_DIR} = C:\Program Files\IBM\ISWarehouse\ds
+     ${RESERVED/USER_HOME} = C:\Users\STUDENT
+     ${RESERVED/USER_NAME} = STUDENT
+     ${RESERVED/YEAR} = 2019
+ Data-Flows  17 Jan, 2019 3:42:00 PM   SQW03408I: Flow execution finished for SQW003 (/Q1/data-flows/Q1ADWFLOW)
+ Data-Flows  17 Jan, 2019 3:42:00 PM   SQW38508I: Closing log file D:/160911228/lab1/Q1/run-profiles/logs/Q1ADWFLOW_SQW003.txt.

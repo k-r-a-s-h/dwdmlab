@@ -16,7 +16,9 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.datatools.sqltools.data.internal.ui.editor.tableDataEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="DataFlowEditor" itemType="typeToolBarContribution" x="379" y="22"/>
+<coolItem id="com.ibm.datatools.sqlxeditor.SQLXEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.datatools.sqltools.data.internal.ui.editor.tableDataEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="ERPhysicalDiagramEditor" itemType="typeToolBarContribution" x="867" y="22"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="com.ibm.cic.licensing.common.ui.controlContribution" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -33,14 +35,6 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
-<part id="5"/>
-<part id="6"/>
-<part id="7"/>
-<part id="8"/>
-<part id="9"/>
-<part id="10"/>
-<part id="11"/>
-<part id="12"/>
 </presentation>
 </folder>
 </info>
@@ -48,9 +42,20 @@
 <editor id="com.ibm.datatools.project.ui.PhysicalModelEditor" name="Database Model.dbm" partName="Database Model.dbm" path="D:/160911228/lab1/Q1/Database Model.dbm" title="Database Model.dbm" tooltip="\Q1\Database Model.dbm" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Q1/Database Model.dbm"/>
 </editor>
+<editor id="DataFlowEditor" name="Q2B.etlmetadataxmi" partName="Q2B" path="D:/160911228/lab1/Q1/data-flows/Q2B.etlmetadataxmi" title="Q2B" tooltip="Q1/data-flows/Q2B (GSDBIB2 Online)" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Q1/data-flows/Q2B.etlmetadataxmi"/>
+</editor>
+<editor id="DataFlowEditor" name="Q2C.etlmetadataxmi" partName="Q2C" path="D:/160911228/lab1/Q1/data-flows/Q2C.etlmetadataxmi" title="Q2C" tooltip="Q1/data-flows/Q2C (GSDBIB2 Online)" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Q1/data-flows/Q2C.etlmetadataxmi"/>
+</editor>
+<editor activePart="true" focus="true" id="DataFlowEditor" name="Q2D.etlmetadataxmi" partName="Q2D" path="D:/160911228/lab1/Q1/data-flows/Q2D.etlmetadataxmi" title="Q2D" tooltip="Q1/data-flows/Q2D (GSDBIB2 Online)" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Q1/data-flows/Q2D.etlmetadataxmi"/>
+</editor>
 </editors>
 <views>
-<view id="com.ibm.datatools.etl.ascrun.ui.core.views.JobStatusView" partName="Job Status"/>
+<view id="com.ibm.datatools.etl.ascrun.ui.core.views.JobStatusView" partName="Job Status">
+<viewState/>
+</view>
 <view id="org.eclipse.datatools.sqltools.result.resultView" partName="SQL Results">
 <viewState columnWidth0="80" columnWidth1="80" columnWidth2="0" columnWidth3="80" columnWidth4="0" columnWidth5="0" columnWidth6="80"/>
 </view>
@@ -71,8 +76,7 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Errors"/>
+<expanded>&#x0A;<category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="64" org.eclipse.ui.ide.markerType="94" org.eclipse.ui.ide.pathField="124" org.eclipse.ui.ide.resourceField="94" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -89,7 +93,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.datatools.sqltools.data.internal.ui.editor.tableDataEditor" activePerspective="com.ibm.datatools.dwe.BIPerspective">
+<perspectives activePart="DataFlowEditor" activePerspective="com.ibm.datatools.dwe.BIPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.ibm.datatools.dwe.biperspective.BIPerspective" id="com.ibm.datatools.dwe.BIPerspective" label="Data Warehousing"/>
 <alwaysOnActionSet id="com.ibm.rational.welcome.core.webResourcesActionSet"/>
@@ -134,16 +138,16 @@
 <new_wizard_action id="com.ibm.datatools.textanalytics.oplib.ui.wizards.NewRulesWizard"/>
 <new_wizard_action id="com.ibm.datatools.textanalytics.oplib.ui.wizards.NewTermExtractionWizard"/>
 <new_wizard_action id="com.ibm.datatools.textanalytics.taxonomy.wizards.CreateTaxonomyWizard"/>
-<view id="org.eclipse.ui.views.PropertySheet"/>
-<view id="org.eclipse.datatools.sqltools.result.resultView"/>
-<view id="org.eclipse.ui.views.ProblemView"/>
-<view id="com.ibm.datatools.dwe.common.ui.views.execution.ExecutionStatusView"/>
-<view id="com.ibm.datatools.etl.ascrun.ui.core.views.JobStatusView"/>
-<view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="com.ibm.datatools.project.ui.projectExplorer"/>
 <view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="com.ibm.datatools.etl.ascrun.ui.core.views.DSSExplorer"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="org.eclipse.datatools.sqltools.result.resultView"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="com.ibm.datatools.dwe.common.ui.views.execution.ExecutionStatusView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="com.ibm.datatools.etl.ascrun.ui.core.views.JobStatusView"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -163,13 +167,12 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.3623616" ratioLeft="491" ratioRight="864" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.5368249" ratioLeft="328" ratioRight="283" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.datatools.sqltools.result.resultView" appearance="2" expanded="2">
+<info folder="true" part="bottom" ratio="0.7594108" ratioLeft="464" ratioRight="147" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.PropertySheet" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
 <page content="org.eclipse.datatools.sqltools.result.resultView" label="SQL Results"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="com.ibm.datatools.dwe.common.ui.views.execution.ExecutionStatusView" label="Execution Status"/>
-<page content="com.ibm.datatools.etl.ascrun.ui.core.views.JobStatusView" label="Job Status"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="com.ibm.datatools.sqw.solution.ui.explorationview" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -178,12 +181,19 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
-<part id="5"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@579d579d" ratio="0.93709326" ratioLeft="432" ratioRight="29" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="com.ibm.datatools.etl.ascrun.ui.core.views.JobStatusView" appearance="2" expanded="2">
+<page content="com.ibm.datatools.etl.ascrun.ui.core.views.JobStatusView" label="Job Status"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
 <info folder="true" part="bottomLeft" ratio="0.64882946" ratioLeft="388" ratioRight="210" relationship="4" relative="topLeft">
-<folder activePageID="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" appearance="2" expanded="2">
+<folder activePageID="com.ibm.datatools.project.ui.projectExplorer" appearance="2" expanded="2">
 <page content="com.ibm.datatools.project.ui.projectExplorer" label="Data Project Explorer"/>
 <page content="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" label="Data Source Explorer"/>
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
@@ -201,18 +211,75 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ibm.datatools.project.ui.PhysicalModelEditor" path="/Q1/Database Model.dbm"/>
+<editor connInfoName="GSDBIB2" editorInputType="SQLEditorFileEditorInput" factoryID="com.ibm.datatools.sqlxeditor.SQLXEditorInputFactory" id="com.ibm.datatools.sqlxeditor.SQLXEditor" path="/.sqlxeditor_project/RESULT.sql"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="DataFlowEditor" path="/Q1/data-flows/Q1ADWFLOW.etlmetadataxmi"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="DataFlowEditor" path="/Q1/data-flows/Q1ADWFLOW.etlmetadataxmi"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ibm.datatools.project.ui.PhysicalModelEditor" path="/Q1/databases/Dynamic Data Model-GSDBIB2.dbm"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="DataFlowEditor" path="/Q1/data-flows/Q1BDWMODEL.etlmetadataxmi"/>
+<editor connInfoName="GSDBIB2" editorInputType="SQLEditorFileEditorInput" factoryID="com.ibm.datatools.sqlxeditor.SQLXEditorInputFactory" id="com.ibm.datatools.sqlxeditor.SQLXEditor" path="/.sqlxeditor_project/RESULT_B.sql"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ibm.datatools.project.ui.PhysicalModelEditor" path="/Q1/databases/Dynamic Data Model-GSDBIB2.dbm"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ibm.datatools.project.ui.PhysicalModelEditor" path="/Q1/databases/Dynamic Data Model-GSDBIB2.dbm"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="DataFlowEditor" path="/Q1/data-flows/Q2A.etlmetadataxmi"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="DataFlowEditor" path="/Q1/data-flows/Q2B.etlmetadataxmi"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="DataFlowEditor" path="/Q1/data-flows/Q2C.etlmetadataxmi"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="DataFlowEditor" path="/Q1/data-flows/Q2D.etlmetadataxmi"/>
+</editors>
+<item historyLabel="RESULT.sql" index="1">
+<position/>
+</item>
+<item historyLabel="Database Model.dbm" index="0"/>
+<item historyLabel="Q1ADWFLOW" index="2"/>
+<item historyLabel="Q1ADWFLOW" index="2"/>
+<item historyLabel="Q1ADWFLOW" index="2"/>
+<item historyLabel="Q1ADWFLOW" index="2"/>
+<item historyLabel="Q1ADWFLOW" index="2"/>
+<item historyLabel="Database Model.dbm" index="0"/>
+<item historyLabel="Q1ADWFLOW" index="3"/>
+<item historyLabel="Dynamic Data Model-GSDBIB2.dbm" index="4"/>
+<item historyLabel="Database Model.dbm" index="0"/>
+<item historyLabel="Q1ADWFLOW" index="3"/>
+<item historyLabel="Q1BDWMODEL" index="5"/>
+<item historyLabel="Q1BDWMODEL" index="5"/>
+<item historyLabel="Q1BDWMODEL" index="5"/>
+<item historyLabel="RESULT_B.sql" index="6">
+<position/>
+</item>
+<item historyLabel="Q1BDWMODEL" index="5"/>
+<item historyLabel="Q1BDWMODEL" index="5"/>
+<item historyLabel="Dynamic Data Model-GSDBIB2.dbm" index="7"/>
+<item historyLabel="Q1BDWMODEL" index="5"/>
+<item historyLabel="Dynamic Data Model-GSDBIB2.dbm" index="8"/>
+<item historyLabel="Q1BDWMODEL" index="5"/>
+<item historyLabel="Dynamic Data Model-GSDBIB2.dbm" index="8"/>
+<item historyLabel="Q1BDWMODEL" index="5"/>
+<item historyLabel="Q1ADWFLOW" index="3"/>
+<item historyLabel="Q1BDWMODEL" index="5"/>
+<item historyLabel="Q1ADWFLOW" index="3"/>
+<item historyLabel="Q2A" index="9"/>
+<item historyLabel="Q2A" index="9"/>
+<item historyLabel="Q2A" index="9"/>
+<item historyLabel="Q2A" index="9"/>
+<item historyLabel="Database Model.dbm" index="0"/>
+<item historyLabel="Q2A" index="9"/>
+<item historyLabel="Database Model.dbm" index="0"/>
+<item historyLabel="Q2B" index="10"/>
+<item historyLabel="Q2B" index="10"/>
+<item historyLabel="Q2B" index="10"/>
+<item historyLabel="Q2B" index="10"/>
+<item historyLabel="Q2C" index="11"/>
+<item historyLabel="Q2C" index="11"/>
+<item historyLabel="Q2B" index="10"/>
+<item historyLabel="Q2C" index="11"/>
+<item active="true" historyLabel="Q2D" index="12"/>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="bottomLeft"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -220,16 +287,21 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ibm.datatools.project.ui.PhysicalModelEditor" name="Database Model.dbm" tooltip="Q1/Database Model.dbm">
-<persistable path="/Q1/Database Model.dbm"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="DataFlowEditor" name="Q2D.dataflowxmi" tooltip="Q1/data-flows/Q2D.dataflowxmi">
+<persistable path="/Q1/data-flows/Q2D.dataflowxmi"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ibm.datatools.project.ui.PhysicalModelEditor" name="Database Model.dbm" tooltip="DataDemo/Database Model.dbm">
-<persistable path="/DataDemo/Database Model.dbm"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="DataFlowEditor" name="Q2C.dataflowxmi" tooltip="Q1/data-flows/Q2C.dataflowxmi">
+<persistable path="/Q1/data-flows/Q2C.dataflowxmi"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="DataFlowEditor" name="Q2B.dataflowxmi" tooltip="Q1/data-flows/Q2B.dataflowxmi">
+<persistable path="/Q1/data-flows/Q2B.dataflowxmi"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="DataFlowEditor" name="Q2A.dataflowxmi" tooltip="Q1/data-flows/Q2A.dataflowxmi">
+<persistable path="/Q1/data-flows/Q2A.dataflowxmi"/>
 </file>
 </mruList>
 </workbench>

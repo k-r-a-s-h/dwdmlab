@@ -1,0 +1,41 @@
+ Data-Flows  17 Jan, 2019 3:44:58 PM   SQW03415I: Flow execution started for SQW004 (/Q1/data-flows/Q1ADWFLOW)
+ Data-Flows  17 Jan, 2019 3:44:58 PM   SQW38501I: Execution log file:  D:/160911228/lab1/Q1/run-profiles/logs/Q1ADWFLOW_SQW004.txt
+ Data-Flows  17 Jan, 2019 3:44:58 PM   SQW38509I: Execution temporary work directory:  D:/160911228/lab1/Q1/run-profiles/tmp\Q1ADWFLOW_SQW004
+ Data-Flows  17 Jan, 2019 3:45:01 PM   SQW03275I: Execution of SQL statement "SET CURRENT SCHEMA "IWSCHEMA4E8AEB_15"" through JDBC connection finished successfully
+ Data-Flows  17 Jan, 2019 3:45:01 PM   SQW03275I: Execution of SQL statement "INSERT INTO Q1228.RESULT_FINAL (SNUM, SNAME)
+  SELECT Q542.SNUM AS SNUM, Q546.SNAME AS SNAME
+    FROM (SELECT Q221.SNUM AS SNUM
+            FROM (SELECT Q31.SNUM AS SNUM
+                    FROM Q1228.ENROLLED Q31
+                    WHERE (Q31.GRADE = 'A')) Q221
+          EXCEPT
+          SELECT Q228.SNUM AS SNUM
+            FROM (SELECT Q101.SNUM AS SNUM
+                    FROM Q1228.ENROLLED Q101
+                    WHERE (Q101.GRADE <> 'A')) Q228) Q542, Q1228.STUDENT Q546
+    WHERE (Q546.SNUM = Q542.SNUM)" through JDBC connection finished successfully
+ Data-Flows  17 Jan, 2019 3:45:01 PM   SQW03368I: Dumping variable values : 
+     ${INT-RES/RUN-ID} = 4E8AEB
+     ${RESERVED/APP_NAME} = Q1ADWFLOW
+     ${RESERVED/APP_PATH} = D:/160911228/lab1/Q1/run-profiles/rp4e7c3d/
+     ${RESERVED/CURRENT_TIMESTAMP} = 2019-01-17 15:45:00
+     ${RESERVED/DATE} = 2019-01-17
+     ${RESERVED/DAYNAME_SHORT} = Thu
+     ${RESERVED/DAYNAME} = Thursday
+     ${RESERVED/DAY} = 17
+     ${RESERVED/INSTANCE_NAME} = SQW004
+     ${RESERVED/MISC_DIR} = D:/160911228/lab1\Q1\package-misc\
+     ${RESERVED/MONTHNAME_SHORT} = Jan
+     ${RESERVED/MONTHNAME} = January
+     ${RESERVED/MONTH} = 01
+     ${RESERVED/PROC_NAME} = Q1ADWFLOW
+     ${RESERVED/RUN_ID} = 4E8AEB
+     ${RESERVED/START_TIMESTAMP} = 2019-01-17 15:45:00
+     ${RESERVED/TIME} = 15:45:00
+     ${RESERVED/TMP_DIR} = D:/160911228/lab1/Q1/run-profiles/tmp\Q1ADWFLOW_SQW004
+     ${RESERVED/USER_DIR} = C:\Program Files\IBM\ISWarehouse\ds
+     ${RESERVED/USER_HOME} = C:\Users\STUDENT
+     ${RESERVED/USER_NAME} = STUDENT
+     ${RESERVED/YEAR} = 2019
+ Data-Flows  17 Jan, 2019 3:45:01 PM   SQW03408I: Flow execution finished for SQW004 (/Q1/data-flows/Q1ADWFLOW)
+ Data-Flows  17 Jan, 2019 3:45:01 PM   SQW38508I: Closing log file D:/160911228/lab1/Q1/run-profiles/logs/Q1ADWFLOW_SQW004.txt.

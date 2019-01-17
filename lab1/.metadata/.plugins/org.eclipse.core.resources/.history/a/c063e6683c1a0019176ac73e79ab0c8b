@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.datatools.etl.errmsgs:Message xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.datatools.etl.errmsgs="http:///com/ibm/datatools/etl/errmsgs.ecore" msgNum="12209" timestamp="1547718168942" msgTxt="Validation succeeded for the 'Q1ADWFLOW' flow. However, there were warnings." msgSeverity="WARN" component="dataflow.validation" msgDescTxt="Validation succeeded for Q1ADWFLOW with warnings." msgCause="" msgResponse="" entityType="DataFlow">
+  <expandedMsgs msgNum="12208" timestamp="1547718168920" msgTxt="Validation succeeded for the 'flowLabel'." msgSeverity="LOG" component="dataflow.validation" msgDescTxt="Validation succeeded for flowLabel." msgCause="" msgResponse="" entityType="DataFlow" operatorID="05">
+    <expandedMsgs msgNum="1253" timestamp="1547718168922" msgTxt="Operator 'ENROLLED': Error on condition 'SQL_?ColumnRefUnresolved : Unable to find table for column &quot;A&quot;.'" msgSeverity="WARN" component="dataflow.core" msgDescTxt="Attempting to parse condition with the SQL parser generated an error. " msgCause="A problem was encountered while parsing the condition. " msgResponse="Correct the condition." entityType="MSG_CONDITION_PARSE" operatorID="05"/>
+  </expandedMsgs>
+</com.ibm.datatools.etl.errmsgs:Message>

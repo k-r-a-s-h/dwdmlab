@@ -1,0 +1,34 @@
+ Data-Flows  17 Jan, 2019 4:50:11 PM   SQW03415I: Flow execution started for SQW003 (/Q1/data-flows/Q2B)
+ Data-Flows  17 Jan, 2019 4:50:11 PM   SQW38501I: Execution log file:  D:/160911228/lab1/Q1/run-profiles/logs/Q2B_SQW003.txt
+ Data-Flows  17 Jan, 2019 4:50:11 PM   SQW38509I: Execution temporary work directory:  D:/160911228/lab1/Q1/run-profiles/tmp\Q2B_SQW003
+ Data-Flows  17 Jan, 2019 4:50:14 PM   SQW03275I: Execution of SQL statement "SET CURRENT SCHEMA "IWSCHEMA8A4068_10"" through JDBC connection finished successfully
+ Data-Flows  17 Jan, 2019 4:50:14 PM   SQW03275I: Execution of SQL statement "DELETE FROM Q2228.RESULTB" through JDBC connection finished successfully
+ Data-Flows  17 Jan, 2019 4:50:14 PM   SQW03275I: Execution of SQL statement "INSERT INTO Q2228.RESULTB (NAME, CITY)
+  SELECT Q350.NAME AS NAME, Q350.CITY AS CITY
+    FROM Q2228.WORKS Q347, Q2228.EMPLOYEE Q350
+    WHERE (Q347.EMPID = Q350.EMPID) AND (Q347.COMPANYNAME = 'KOBHI1')" through JDBC connection finished successfully
+ Data-Flows  17 Jan, 2019 4:50:14 PM   SQW03368I: Dumping variable values : 
+     ${INT-RES/RUN-ID} = 8A4068
+     ${RESERVED/APP_NAME} = Q2B
+     ${RESERVED/APP_PATH} = D:/160911228/lab1/Q1/run-profiles/rp8a3154/
+     ${RESERVED/CURRENT_TIMESTAMP} = 2019-01-17 16:50:14
+     ${RESERVED/DATE} = 2019-01-17
+     ${RESERVED/DAYNAME_SHORT} = Thu
+     ${RESERVED/DAYNAME} = Thursday
+     ${RESERVED/DAY} = 17
+     ${RESERVED/INSTANCE_NAME} = SQW003
+     ${RESERVED/MISC_DIR} = D:/160911228/lab1\Q1\package-misc\
+     ${RESERVED/MONTHNAME_SHORT} = Jan
+     ${RESERVED/MONTHNAME} = January
+     ${RESERVED/MONTH} = 01
+     ${RESERVED/PROC_NAME} = Q2B
+     ${RESERVED/RUN_ID} = 8A4068
+     ${RESERVED/START_TIMESTAMP} = 2019-01-17 16:50:13
+     ${RESERVED/TIME} = 16:50:13
+     ${RESERVED/TMP_DIR} = D:/160911228/lab1/Q1/run-profiles/tmp\Q2B_SQW003
+     ${RESERVED/USER_DIR} = C:\Program Files\IBM\ISWarehouse\ds
+     ${RESERVED/USER_HOME} = C:\Users\STUDENT
+     ${RESERVED/USER_NAME} = STUDENT
+     ${RESERVED/YEAR} = 2019
+ Data-Flows  17 Jan, 2019 4:50:14 PM   SQW03408I: Flow execution finished for SQW003 (/Q1/data-flows/Q2B)
+ Data-Flows  17 Jan, 2019 4:50:14 PM   SQW38508I: Closing log file D:/160911228/lab1/Q1/run-profiles/logs/Q2B_SQW003.txt.
