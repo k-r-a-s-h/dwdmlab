@@ -1,0 +1,44 @@
+ Data-Flows  24 Jan, 2019 4:03:20 PM   SQW03415I: Flow execution started for SQW013 (/Q1/data-flows/AGGR)
+ Data-Flows  24 Jan, 2019 4:03:20 PM   SQW38501I: Execution log file:  D:/160911228/lab1/Q1/run-profiles/logs/AGGR_SQW013.txt
+ Data-Flows  24 Jan, 2019 4:03:20 PM   SQW38509I: Execution temporary work directory:  D:/160911228/lab1/Q1/run-profiles/tmp\AGGR_SQW013
+ Data-Flows  24 Jan, 2019 4:03:22 PM   SQW03275I: Execution of SQL statement "SET CURRENT SCHEMA "IWSCHEMA6BDD7A_37"" through JDBC connection finished successfully
+ Data-Flows  24 Jan, 2019 4:03:22 PM   SQW03275I: Execution of SQL statement "CREATE VIEW INPUT_014_0(
+  SALARY, 
+  COMPANYNAME
+) AS 
+SELECT Q230.SALARY AS SALARY, Q230.COMPANYNAME AS COMPANYNAME
+  FROM (SELECT Q179.SALARY AS SALARY, CAST (NULL AS VARCHAR (20)) AS COMPANYNAME
+          FROM (SELECT SUM(Q132.SALARY) AS SALARY
+                  FROM (
+                      SELECT Q123.COMPANYNAME AS COMPANYNAME,
+                             Q123.COMPID AS COMPID, Q123.SALARY AS SALARY
+                        FROM Q2228.WORKS Q123) Q132
+                  GROUP BY Q132.COMPID, Q132.COMPANYNAME) Q179) Q230" through JDBC connection finished successfully
+ Data-Flows  24 Jan, 2019 4:03:22 PM   SQW03275I: Execution of SQL statement "DELETE FROM Q2228.LAB3Q1A" through JDBC connection finished successfully
+ Data-Flows  24 Jan, 2019 4:03:23 PM   SQW03276E: Execution of SQL statement "INSERT INTO Q2228.LAB3Q1A(SUM) SELECT Q310.SALARY AS SALARY FROM  ( SELECT MIN("INPUT_014_0"."SALARY")  AS "SALARY", "INPUT_014_0"."COMPANYNAME"  AS "COMPANYNAME"  FROM  "INPUT_014_0"  HAVING 1=1 )  Q310" through JDBC connection failed. Exception: SQL Exception. SQL state = 42803; error code = -119; error Message = An expression starting with "COMPANYNAME" specified in a SELECT clause, HAVING clause, or ORDER BY clause is not specified in the GROUP BY clause or it is in a SELECT clause, HAVING clause, or ORDER BY clause with a column function and no GROUP BY clause is specified.. SQLCODE=-119, SQLSTATE=42803, DRIVER=4.7.89SQL Exception. SQL state = 56098; error code = -727; error Message = An error occurred during implicit system action type "2". Information returned for the error includes SQLCODE "-119", SQLSTATE "42803" and message tokens "COMPANYNAME".. SQLCODE=-727, SQLSTATE=56098, DRIVER=4.7.89SQL Exception. SQL state = 56098; error code = -727; error Message = An error occurred during implicit system action type "2". Information returned for the error includes SQLCODE "-119", SQLSTATE "42803" and message tokens "COMPANYNAME".. SQLCODE=-727, SQLSTATE=56098, DRIVER=4.7.89
+ Data-Flows  24 Jan, 2019 4:03:23 PM   SQW03275I: Execution of SQL statement "DROP VIEW INPUT_014_0" through JDBC connection finished successfully
+ Data-Flows  24 Jan, 2019 4:03:23 PM   SQW03368I: Dumping variable values : 
+     ${INT-RES/RUN-ID} = 6BDD7A
+     ${RESERVED/APP_NAME} = AGGR
+     ${RESERVED/APP_PATH} = D:/160911228/lab1/Q1/run-profiles/rp6bc85f/
+     ${RESERVED/CURRENT_TIMESTAMP} = 2019-01-24 16:03:22
+     ${RESERVED/DATE} = 2019-01-24
+     ${RESERVED/DAYNAME_SHORT} = Thu
+     ${RESERVED/DAYNAME} = Thursday
+     ${RESERVED/DAY} = 24
+     ${RESERVED/INSTANCE_NAME} = SQW013
+     ${RESERVED/MISC_DIR} = D:/160911228/lab1\Q1\package-misc\
+     ${RESERVED/MONTHNAME_SHORT} = Jan
+     ${RESERVED/MONTHNAME} = January
+     ${RESERVED/MONTH} = 01
+     ${RESERVED/PROC_NAME} = AGGR
+     ${RESERVED/RUN_ID} = 6BDD7A
+     ${RESERVED/START_TIMESTAMP} = 2019-01-24 16:03:22
+     ${RESERVED/TIME} = 16:03:22
+     ${RESERVED/TMP_DIR} = D:/160911228/lab1/Q1/run-profiles/tmp\AGGR_SQW013
+     ${RESERVED/USER_DIR} = C:\Program Files\IBM\ISWarehouse\ds
+     ${RESERVED/USER_HOME} = C:\Users\STUDENT
+     ${RESERVED/USER_NAME} = STUDENT
+     ${RESERVED/YEAR} = 2019
+ Data-Flows  24 Jan, 2019 4:03:23 PM   SQW03408I: Flow execution finished for SQW013 (/Q1/data-flows/AGGR)
+ Data-Flows  24 Jan, 2019 4:03:23 PM   SQW38508I: Closing log file D:/160911228/lab1/Q1/run-profiles/logs/AGGR_SQW013.txt.

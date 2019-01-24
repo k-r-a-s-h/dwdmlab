@@ -1,0 +1,45 @@
+ Data-Flows  24 Jan, 2019 3:57:57 PM   SQW03415I: Flow execution started for SQW009 (/Q1/data-flows/AGGR)
+ Data-Flows  24 Jan, 2019 3:57:57 PM   SQW38501I: Execution log file:  D:/160911228/lab1/Q1/run-profiles/logs/AGGR_SQW009.txt
+ Data-Flows  24 Jan, 2019 3:57:57 PM   SQW38509I: Execution temporary work directory:  D:/160911228/lab1/Q1/run-profiles/tmp\AGGR_SQW009
+ Data-Flows  24 Jan, 2019 3:58:00 PM   SQW03275I: Execution of SQL statement "SET CURRENT SCHEMA "IWSCHEMA66F0B3_27"" through JDBC connection finished successfully
+ Data-Flows  24 Jan, 2019 3:58:00 PM   SQW03275I: Execution of SQL statement "CREATE VIEW INPUT_08_0(
+  EMPID, 
+  COMPID, 
+  COMPANYNAME, 
+  SALARY
+) AS 
+SELECT Q155.EMPID AS EMPID, Q155.COMPID AS COMPID, Q155.COMPANYNAME AS COMPANYNAME,
+       Q155.SALARY AS SALARY
+  FROM Q2228.WORKS Q155" through JDBC connection finished successfully
+ Data-Flows  24 Jan, 2019 3:58:00 PM   SQW03276E: Execution of SQL statement "CREATE VIEW INPUT_014_0(
+  SALARY, 
+  COMPANYNAME
+) AS 
+ SELECT SUM("INPUT_08_0"."SALARY")  AS "SALARY", "INPUT_08_0"."COMPANYNAME"  AS "COMPANYNAME"  FROM  "INPUT_08_0"  GROUP BY "INPUT_08_0"."COMPID"" through JDBC connection failed. Exception: SQL Exception. SQL state = 42803; error code = -119; error Message = An expression starting with "COMPANYNAME" specified in a SELECT clause, HAVING clause, or ORDER BY clause is not specified in the GROUP BY clause or it is in a SELECT clause, HAVING clause, or ORDER BY clause with a column function and no GROUP BY clause is specified.. SQLCODE=-119, SQLSTATE=42803, DRIVER=4.7.89
+ Data-Flows  24 Jan, 2019 3:58:00 PM   SQW03276E: Execution of SQL statement "DROP VIEW INPUT_014_0" through JDBC connection failed. Exception: SQL Exception. SQL state = 42704; error code = -204; error Message = "IWSCHEMA66F0B3_27.INPUT_014_0" is an undefined name.. SQLCODE=-204, SQLSTATE=42704, DRIVER=4.7.89
+ Data-Flows  24 Jan, 2019 3:58:00 PM   SQW03275I: Execution of SQL statement "DROP VIEW INPUT_08_0" through JDBC connection finished successfully
+ Data-Flows  24 Jan, 2019 3:58:00 PM   SQW03368I: Dumping variable values : 
+     ${INT-RES/RUN-ID} = 66F0B3
+     ${RESERVED/APP_NAME} = AGGR
+     ${RESERVED/APP_PATH} = D:/160911228/lab1/Q1/run-profiles/rp66dc97/
+     ${RESERVED/CURRENT_TIMESTAMP} = 2019-01-24 15:57:59
+     ${RESERVED/DATE} = 2019-01-24
+     ${RESERVED/DAYNAME_SHORT} = Thu
+     ${RESERVED/DAYNAME} = Thursday
+     ${RESERVED/DAY} = 24
+     ${RESERVED/INSTANCE_NAME} = SQW009
+     ${RESERVED/MISC_DIR} = D:/160911228/lab1\Q1\package-misc\
+     ${RESERVED/MONTHNAME_SHORT} = Jan
+     ${RESERVED/MONTHNAME} = January
+     ${RESERVED/MONTH} = 01
+     ${RESERVED/PROC_NAME} = AGGR
+     ${RESERVED/RUN_ID} = 66F0B3
+     ${RESERVED/START_TIMESTAMP} = 2019-01-24 15:57:59
+     ${RESERVED/TIME} = 15:57:59
+     ${RESERVED/TMP_DIR} = D:/160911228/lab1/Q1/run-profiles/tmp\AGGR_SQW009
+     ${RESERVED/USER_DIR} = C:\Program Files\IBM\ISWarehouse\ds
+     ${RESERVED/USER_HOME} = C:\Users\STUDENT
+     ${RESERVED/USER_NAME} = STUDENT
+     ${RESERVED/YEAR} = 2019
+ Data-Flows  24 Jan, 2019 3:58:00 PM   SQW03408I: Flow execution finished for SQW009 (/Q1/data-flows/AGGR)
+ Data-Flows  24 Jan, 2019 3:58:00 PM   SQW38508I: Closing log file D:/160911228/lab1/Q1/run-profiles/logs/AGGR_SQW009.txt.

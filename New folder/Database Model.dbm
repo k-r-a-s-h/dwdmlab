@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<xmi:XMI xmlns:datamodelversion="http://www.ibm.com/com.ibm.datatools.core/model/7.5.2.0" xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DB2Model="http:///com/ibm/db/models/db2/db2.ecore" xmlns:LUW="http:///com/ibm/db/models/db2/luw.ecore" xmlns:SQLConstraints="http:///org/eclipse/datatools/modelbase/sql/constraints.ecore" xmlns:SQLDataTypes="http:///org/eclipse/datatools/modelbase/sql/datatypes.ecore" xmlns:datanotation="http:///datanotation.ecore">
+  <LUW:LUWDatabase xmi:id="_qKOSkB-zEemtPvKPt28hOg" name="Database" vendor="DB2 UDB" version="V8.2" schemas="_qOjY8B-zEemtPvKPt28hOg"/>
+  <DB2Model:DB2Schema xmi:id="_qOjY8B-zEemtPvKPt28hOg" name="EVAL1228" tables="_q2e7oB-zEemtPvKPt28hOg _GJSlgB-0EemtPvKPt28hOg _VYGSAB-0EemtPvKPt28hOg" database="_qKOSkB-zEemtPvKPt28hOg">
+    <eAnnotations xmi:id="_qOjY8R-zEemtPvKPt28hOg" source="diagram">
+      <contents xsi:type="datanotation:DataDiagram" xmi:id="_qOjY8h-zEemtPvKPt28hOg" type="IE_CrowFoot" name="Diagram1" viewKind="ProjectExplorer" notation="IE_CrowFoot" kind="Physical">
+        <styles xsi:type="datanotation:DataAttributeStyle" xmi:id="_qOjY8x-zEemtPvKPt28hOg"/>
+        <styles xsi:type="datanotation:DataCompartmentStyle" xmi:id="_qOjY9B-zEemtPvKPt28hOg"/>
+        <styles xsi:type="datanotation:DataDisplayStyle" xmi:id="_qOjY9R-zEemtPvKPt28hOg"/>
+        <styles xsi:type="datanotation:DataDiagramRelationshipStyle" xmi:id="_qOjY9h-zEemtPvKPt28hOg"/>
+        <styles xsi:type="datanotation:DataShapeNameStyle" xmi:id="_qOjY9x-zEemtPvKPt28hOg"/>
+        <styles xsi:type="datanotation:DataDiagramFormattingStyle" xmi:id="_qOjY-B-zEemtPvKPt28hOg"/>
+        <element xsi:nil="true"/>
+      </contents>
+    </eAnnotations>
+  </DB2Model:DB2Schema>
+  <LUW:LUWTable xmi:id="_q2e7oB-zEemtPvKPt28hOg" name="STUDENT" schema="_qOjY8B-zEemtPvKPt28hOg" referencingForeignKeys="_q3ucUB-0EemtPvKPt28hOg">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_wq2uAB-zEemtPvKPt28hOg" name="SID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_yqGo8B-zEemtPvKPt28hOg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_0t00MB-zEemtPvKPt28hOg" name="SNAME">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_3GG6MB-zEemtPvKPt28hOg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_3v-9oB-zEemtPvKPt28hOg" name="YEAR">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_7u7fcB-zEemtPvKPt28hOg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_9ne8gB-zEemtPvKPt28hOg" name="ADDRESS">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_B3RWsB-0EemtPvKPt28hOg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_0Dzm0B-zEemtPvKPt28hOg" name="STUDENT_PK" members="_wq2uAB-zEemtPvKPt28hOg" ForeignKey="_q3ucUB-0EemtPvKPt28hOg"/>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_GJSlgB-0EemtPvKPt28hOg" name="COURSE" schema="_qOjY8B-zEemtPvKPt28hOg" referencingForeignKeys="_gxVbIB-0EemtPvKPt28hOg">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_J_KD0B-0EemtPvKPt28hOg" name="CID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_LKP98B-0EemtPvKPt28hOg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Lw_04B-0EemtPvKPt28hOg" name="CNAME">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_Ncbb8B-0EemtPvKPt28hOg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_N6X8MB-0EemtPvKPt28hOg" name="CHOUR">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_RvyukB-0EemtPvKPt28hOg" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Sbc6sB-0EemtPvKPt28hOg" name="CREDIT">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_Tlz1AB-0EemtPvKPt28hOg" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_Kg-XcB-0EemtPvKPt28hOg" name="COURSE_PK" members="_J_KD0B-0EemtPvKPt28hOg" ForeignKey="_gxVbIB-0EemtPvKPt28hOg"/>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_VYGSAB-0EemtPvKPt28hOg" name="ENROLLED" schema="_qOjY8B-zEemtPvKPt28hOg">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_YdFF8B-0EemtPvKPt28hOg" name="SID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_ahGzMB-0EemtPvKPt28hOg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_bZksQB-0EemtPvKPt28hOg" name="CID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_dvxuoB-0EemtPvKPt28hOg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_bB4lAB-0EemtPvKPt28hOg" name="ENROLLED_PK" members="_YdFF8B-0EemtPvKPt28hOg _bZksQB-0EemtPvKPt28hOg"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_gxVbIB-0EemtPvKPt28hOg" name="ENROLLED_COURSE_FK" members="_bZksQB-0EemtPvKPt28hOg" onDelete="CASCADE" uniqueConstraint="_Kg-XcB-0EemtPvKPt28hOg" referencedTable="_GJSlgB-0EemtPvKPt28hOg">
+      <eAnnotations xmi:id="_gxVbIR-0EemtPvKPt28hOg" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_gxVbIh-0EemtPvKPt28hOg" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
+        <details xmi:id="_gxVbIx-0EemtPvKPt28hOg" key="FK_CHILD_MULTIPLICITY" value=""/>
+        <details xmi:id="_gxVbJB-0EemtPvKPt28hOg" key="FK_CHILD_ROLE_NAME" value="Verb1"/>
+        <details xmi:id="_gxVbJR-0EemtPvKPt28hOg" key="FK_PARENT_MULTIPLICITY" value=""/>
+        <details xmi:id="_gxVbJh-0EemtPvKPt28hOg" key="FK_PARENT_ROLE_NAME" value=""/>
+      </eAnnotations>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_q3ucUB-0EemtPvKPt28hOg" name="ENROLLE_STUDEN_FK" members="_YdFF8B-0EemtPvKPt28hOg" onDelete="CASCADE" uniqueConstraint="_0Dzm0B-zEemtPvKPt28hOg" referencedTable="_q2e7oB-zEemtPvKPt28hOg">
+      <eAnnotations xmi:id="_q3ucUR-0EemtPvKPt28hOg" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_q3ucUh-0EemtPvKPt28hOg" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
+        <details xmi:id="_q3ucUx-0EemtPvKPt28hOg" key="FK_CHILD_MULTIPLICITY" value=""/>
+        <details xmi:id="_q3ucVB-0EemtPvKPt28hOg" key="FK_CHILD_ROLE_NAME" value="Verb1"/>
+        <details xmi:id="_q3ucVR-0EemtPvKPt28hOg" key="FK_PARENT_MULTIPLICITY" value=""/>
+        <details xmi:id="_q3ucVh-0EemtPvKPt28hOg" key="FK_PARENT_ROLE_NAME" value=""/>
+      </eAnnotations>
+    </constraints>
+  </LUW:LUWTable>
+</xmi:XMI>

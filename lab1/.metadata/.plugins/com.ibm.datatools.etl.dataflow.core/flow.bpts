@@ -15,7 +15,19 @@
   <table key="/Q1/data-flows/Q2C.etlmetadataxmi">
     <value xsi:type="com.ibm.datatools.etl.common:StringList"/>
   </table>
-  <table key="/Q1/data-flows/Q2D.etlmetadataxmi">
+  <table key="/Q1/data-flows/LAB2Q1A.etlmetadataxmi">
+    <value xsi:type="com.ibm.datatools.etl.common:StringList"/>
+  </table>
+  <table key="/Q1/data-flows/LAB2Q1B.etlmetadataxmi">
+    <value xsi:type="com.ibm.datatools.etl.common:StringList"/>
+  </table>
+  <table key="/EVAL/data-flows/Q1.etlmetadataxmi">
+    <value xsi:type="com.ibm.datatools.etl.common:StringList"/>
+  </table>
+  <table key="/EVAL/data-flows/Q2.etlmetadataxmi">
+    <value xsi:type="com.ibm.datatools.etl.common:StringList"/>
+  </table>
+  <table key="/Q1/data-flows/AGGR.etlmetadataxmi">
     <value xsi:type="com.ibm.datatools.etl.common:StringList"/>
   </table>
 </com.ibm.datatools.etl.common:ContainedObjLookup>

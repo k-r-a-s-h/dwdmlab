@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item value="true" key="Q1"/>
+	<item value="true" key="EVAL"/>
 	<item value="false" key="DataDemo"/>
 </section>

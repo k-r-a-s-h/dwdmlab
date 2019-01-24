@@ -1,0 +1,34 @@
+ Data-Flows  24 Jan, 2019 2:33:13 PM   SQW03415I: Flow execution started for SQW004 (/EVAL/data-flows/Q1)
+ Data-Flows  24 Jan, 2019 2:33:13 PM   SQW38501I: Execution log file:  D:/160911228/New folder/run-profiles/logs/Q1_SQW004.txt
+ Data-Flows  24 Jan, 2019 2:33:13 PM   SQW38509I: Execution temporary work directory:  D:/160911228/New folder/run-profiles/tmp\Q1_SQW004
+ Data-Flows  24 Jan, 2019 2:33:16 PM   SQW03275I: Execution of SQL statement "SET CURRENT SCHEMA "IWSCHEMA195FD1_10"" through JDBC connection finished successfully
+ Data-Flows  24 Jan, 2019 2:33:16 PM   SQW03275I: Execution of SQL statement "DELETE FROM EVAL1228.EVAL1" through JDBC connection finished successfully
+ Data-Flows  24 Jan, 2019 2:33:16 PM   SQW03275I: Execution of SQL statement "INSERT INTO EVAL1228.EVAL1 (SID, SNAME)
+  SELECT Q356.SID AS SID, Q356.SNAME AS SNAME
+    FROM EVAL1228.STUDENT Q356, EVAL1228.ENROLLED Q229, EVAL1228.COURSE Q362
+    WHERE (Q356.SID = Q229.SID) AND (Q229.CID = Q362.CID) AND (Q362.CNAME = 'ML')" through JDBC connection finished successfully
+ Data-Flows  24 Jan, 2019 2:33:16 PM   SQW03368I: Dumping variable values : 
+     ${INT-RES/RUN-ID} = 195FD1
+     ${RESERVED/APP_NAME} = Q1
+     ${RESERVED/APP_PATH} = D:/160911228/New folder/run-profiles/rp195060/
+     ${RESERVED/CURRENT_TIMESTAMP} = 2019-01-24 14:33:16
+     ${RESERVED/DATE} = 2019-01-24
+     ${RESERVED/DAYNAME_SHORT} = Thu
+     ${RESERVED/DAYNAME} = Thursday
+     ${RESERVED/DAY} = 24
+     ${RESERVED/INSTANCE_NAME} = SQW004
+     ${RESERVED/MISC_DIR} = D:/160911228/lab1\EVAL\package-misc\
+     ${RESERVED/MONTHNAME_SHORT} = Jan
+     ${RESERVED/MONTHNAME} = January
+     ${RESERVED/MONTH} = 01
+     ${RESERVED/PROC_NAME} = Q1
+     ${RESERVED/RUN_ID} = 195FD1
+     ${RESERVED/START_TIMESTAMP} = 2019-01-24 14:33:15
+     ${RESERVED/TIME} = 14:33:15
+     ${RESERVED/TMP_DIR} = D:/160911228/New folder/run-profiles/tmp\Q1_SQW004
+     ${RESERVED/USER_DIR} = C:\Program Files\IBM\ISWarehouse\ds
+     ${RESERVED/USER_HOME} = C:\Users\STUDENT
+     ${RESERVED/USER_NAME} = STUDENT
+     ${RESERVED/YEAR} = 2019
+ Data-Flows  24 Jan, 2019 2:33:16 PM   SQW03408I: Flow execution finished for SQW004 (/EVAL/data-flows/Q1)
+ Data-Flows  24 Jan, 2019 2:33:16 PM   SQW38508I: Closing log file D:/160911228/New folder/run-profiles/logs/Q1_SQW004.txt.
