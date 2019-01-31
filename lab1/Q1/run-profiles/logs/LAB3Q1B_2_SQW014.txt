@@ -1,0 +1,36 @@
+ Data-Flows  31 Jan, 2019 3:58:24 PM   SQW03415I: Flow execution started for SQW014 (/Q1/data-flows/LAB3Q1B_2)
+ Data-Flows  31 Jan, 2019 3:58:24 PM   SQW38501I: Execution log file:  D:/160911228/lab1/Q1/run-profiles/logs/LAB3Q1B_2_SQW014.txt
+ Data-Flows  31 Jan, 2019 3:58:24 PM   SQW38509I: Execution temporary work directory:  D:/160911228/lab1/Q1/run-profiles/tmp\LAB3Q1B_2_SQW014
+ Data-Flows  31 Jan, 2019 3:58:27 PM   SQW03275I: Execution of SQL statement "SET CURRENT SCHEMA "IWSCHEMA73E1DB_5a"" through JDBC connection finished successfully
+ Data-Flows  31 Jan, 2019 3:58:27 PM   SQW03275I: Execution of SQL statement "DELETE FROM Q2228.LAB3Q1BRESULT" through JDBC connection finished successfully
+ Data-Flows  31 Jan, 2019 3:58:27 PM   SQW03275I: Execution of SQL statement "INSERT INTO Q2228.LAB3Q1BRESULT (CNAME, CITY)
+  SELECT Q766.COMAPNYNAME AS COMAPNYNAME, Q769.CITY AS CITY
+    FROM Q2228.LAB3Q1B_1 Q766, Q2228.COMPANY Q769, Q2228.LAB3Q1B_1 Q772,
+         Q2228.COMPANY Q775
+    WHERE (Q769.CITY = Q775.CITY) AND (Q766.COMAPNYNAME = 'KOBHI1')
+    AND (Q769.COMPID = Q766.CID) AND (Q775.COMPID = Q772.CID)" through JDBC connection finished successfully
+ Data-Flows  31 Jan, 2019 3:58:28 PM   SQW03368I: Dumping variable values : 
+     ${INT-RES/RUN-ID} = 73E1DB
+     ${RESERVED/APP_NAME} = LAB3Q1B_2
+     ${RESERVED/APP_PATH} = D:/160911228/lab1/Q1/run-profiles/rp73d38f/
+     ${RESERVED/CURRENT_TIMESTAMP} = 2019-01-31 15:58:27
+     ${RESERVED/DATE} = 2019-01-31
+     ${RESERVED/DAYNAME_SHORT} = Thu
+     ${RESERVED/DAYNAME} = Thursday
+     ${RESERVED/DAY} = 31
+     ${RESERVED/INSTANCE_NAME} = SQW014
+     ${RESERVED/MISC_DIR} = D:/160911228/lab1\Q1\package-misc\
+     ${RESERVED/MONTHNAME_SHORT} = Jan
+     ${RESERVED/MONTHNAME} = January
+     ${RESERVED/MONTH} = 01
+     ${RESERVED/PROC_NAME} = LAB3Q1B_2
+     ${RESERVED/RUN_ID} = 73E1DB
+     ${RESERVED/START_TIMESTAMP} = 2019-01-31 15:58:27
+     ${RESERVED/TIME} = 15:58:27
+     ${RESERVED/TMP_DIR} = D:/160911228/lab1/Q1/run-profiles/tmp\LAB3Q1B_2_SQW014
+     ${RESERVED/USER_DIR} = C:\Program Files\IBM\ISWarehouse\ds
+     ${RESERVED/USER_HOME} = C:\Users\STUDENT
+     ${RESERVED/USER_NAME} = STUDENT
+     ${RESERVED/YEAR} = 2019
+ Data-Flows  31 Jan, 2019 3:58:28 PM   SQW03408I: Flow execution finished for SQW014 (/Q1/data-flows/LAB3Q1B_2)
+ Data-Flows  31 Jan, 2019 3:58:28 PM   SQW38508I: Closing log file D:/160911228/lab1/Q1/run-profiles/logs/LAB3Q1B_2_SQW014.txt.

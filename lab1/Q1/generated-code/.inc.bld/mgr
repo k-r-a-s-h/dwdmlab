@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<srcmgt:SourceMgr xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:srcmgt="com.ibm.datatools.dwe.srcmgt.nsuri" saveLocation="Q1/generated-code/.inc.bld/mgr" genId="9">
+<srcmgt:SourceMgr xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:srcmgt="com.ibm.datatools.dwe.srcmgt.nsuri" saveLocation="Q1/generated-code/.inc.bld/mgr" genId="14">
   <sourceMap key="/Q1/data-flows/Q1ADWFLOW.etlmetadataxmi">
     <value href="mgr_se_1#/"/>
   </sourceMap>
@@ -26,5 +26,20 @@
   </sourceMap>
   <sourceMap key="/Q1/data-flows/AGGR.etlmetadataxmi">
     <value href="mgr_se_9#/"/>
+  </sourceMap>
+  <sourceMap key="/Q1/data-flows/LABq1a.etlmetadataxmi">
+    <value href="mgr_se_10#/"/>
+  </sourceMap>
+  <sourceMap key="/Q1/data-flows/LAB3Q1B.etlmetadataxmi">
+    <value href="mgr_se_11#/"/>
+  </sourceMap>
+  <sourceMap key="/Q1/data-flows/LAB3Q1B_1.etlmetadataxmi">
+    <value href="mgr_se_12#/"/>
+  </sourceMap>
+  <sourceMap key="/Q1/data-flows/LAB3Q1B_2.etlmetadataxmi">
+    <value href="mgr_se_13#/"/>
+  </sourceMap>
+  <sourceMap key="/Q1/control-flows/LAB3Q1BRESULT.cflowxmi">
+    <value href="mgr_se_14#/"/>
   </sourceMap>
 </srcmgt:SourceMgr>

@@ -1,0 +1,43 @@
+ Control-Flows  31 Jan, 2019 4:21:00 PM   SQW03415I: Flow execution started for SQW018 (/Q1/control-flows/LAB3Q1BRESULT)
+ Control-Flows  31 Jan, 2019 4:21:00 PM   SQW38501I: Execution log file:  D:/160911228/lab1/Q1/run-profiles/logs/LAB3Q1BRESULT_SQW018.txt
+ Control-Flows  31 Jan, 2019 4:21:00 PM   SQW38509I: Execution temporary work directory:  D:/160911228/lab1/Q1/run-profiles/tmp\LAB3Q1BRESULT_SQW018
+ Control-Flows  31 Jan, 2019 4:21:04 PM   SQW03275I: Execution of SQL statement "SET CURRENT SCHEMA "IWSCHEMA8892EB_76"" through JDBC connection finished successfully
+ Control-Flows  31 Jan, 2019 4:21:04 PM   SQW03275I: Execution of SQL statement "DELETE FROM Q2228.LAB3Q1B_1" through JDBC connection finished successfully
+ Control-Flows  31 Jan, 2019 4:21:04 PM   SQW03275I: Execution of SQL statement "INSERT INTO Q2228.LAB3Q1B_1 (COMAPNYNAME, CID)
+  SELECT Q95.COMPANYNAME AS COMPANYNAME, Q95.COMPID AS COMPID
+    FROM (SELECT Q39.COMPID AS COMPID, Q39.COMPANYNAME AS COMPANYNAME
+            FROM Q2228.WORKS Q39) Q95
+    GROUP BY Q95.COMPID, Q95.COMPANYNAME" through JDBC connection finished successfully
+ Control-Flows  31 Jan, 2019 4:21:04 PM   SQW03275I: Execution of SQL statement "SET CURRENT SCHEMA "IWSCHEMA8892EB_7d"" through JDBC connection finished successfully
+ Control-Flows  31 Jan, 2019 4:21:04 PM   SQW03275I: Execution of SQL statement "DELETE FROM Q2228.LAB3Q1BRESULT" through JDBC connection finished successfully
+ Control-Flows  31 Jan, 2019 4:21:04 PM   SQW03275I: Execution of SQL statement "INSERT INTO Q2228.LAB3Q1BRESULT (CNAME, CITY)
+  SELECT Q772.COMAPNYNAME AS COMAPNYNAME, Q775.CITY AS CITY
+    FROM Q2228.LAB3Q1B_1 Q766, Q2228.COMPANY Q769, Q2228.LAB3Q1B_1 Q772,
+         Q2228.COMPANY Q775
+    WHERE (Q769.CITY = Q775.CITY) AND (Q766.COMAPNYNAME = 'KOBHI1')
+    AND (Q769.COMPID = Q766.CID) AND (Q775.COMPID = Q772.CID)" through JDBC connection finished successfully
+ Control-Flows  31 Jan, 2019 4:21:05 PM   SQW03368I: Dumping variable values : 
+     ${INT-RES/RUN-ID} = 8892EB
+     ${RESERVED/APP_NAME} = LAB3Q1BRESULT
+     ${RESERVED/APP_PATH} = D:/160911228/lab1/Q1/run-profiles/rp888171/
+     ${RESERVED/CURRENT_TIMESTAMP} = 2019-01-31 16:21:04
+     ${RESERVED/DATE} = 2019-01-31
+     ${RESERVED/DAYNAME_SHORT} = Thu
+     ${RESERVED/DAYNAME} = Thursday
+     ${RESERVED/DAY} = 31
+     ${RESERVED/INSTANCE_NAME} = SQW018
+     ${RESERVED/MISC_DIR} = D:/160911228/lab1\Q1\package-misc\
+     ${RESERVED/MONTHNAME_SHORT} = Jan
+     ${RESERVED/MONTHNAME} = January
+     ${RESERVED/MONTH} = 01
+     ${RESERVED/PROC_NAME} = LAB3Q1BRESULT
+     ${RESERVED/RUN_ID} = 8892EB
+     ${RESERVED/START_TIMESTAMP} = 2019-01-31 16:21:03
+     ${RESERVED/TIME} = 16:21:03
+     ${RESERVED/TMP_DIR} = D:/160911228/lab1/Q1/run-profiles/tmp\LAB3Q1BRESULT_SQW018
+     ${RESERVED/USER_DIR} = C:\Program Files\IBM\ISWarehouse\ds
+     ${RESERVED/USER_HOME} = C:\Users\STUDENT
+     ${RESERVED/USER_NAME} = STUDENT
+     ${RESERVED/YEAR} = 2019
+ Control-Flows  31 Jan, 2019 4:21:05 PM   SQW03408I: Flow execution finished for SQW018 (/Q1/control-flows/LAB3Q1BRESULT)
+ Control-Flows  31 Jan, 2019 4:21:05 PM   SQW38508I: Closing log file D:/160911228/lab1/Q1/run-profiles/logs/LAB3Q1BRESULT_SQW018.txt.

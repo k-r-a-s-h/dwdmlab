@@ -1,11 +1,14 @@
-#Thu Jan 24 15:07:34 IST 2019
+#Thu Jan 31 15:25:07 IST 2019
 //connection-info-name(data-flows/Q1BDWMODEL.etlmetadataxmi)=GSDBIB2
+//connection-info-name(data-flows/LAB3Q1B_2.etlmetadataxmi)=GSDBIB2
 //connection-info-name(data-flows/Q2C.etlmetadataxmi)=GSDBIB2
 //connection-info-name(data-flows/Q2B.etlmetadataxmi)=GSDBIB2
+//connection-info-name(data-flows/LAB3Q1B.etlmetadataxmi)=GSDBIB2
 //connection-info-name(data-flows/Q2D.etlmetadataxmi)=GSDBIB2
 //connection-info-name(data-flows/AGGR.etlmetadataxmi)=GSDBIB2
 //connection-info-name(data-flows/Q1ADWFLOW.etlmetadataxmi)=GSDBIB2
 //connection-info-name(data-flows/LAB2Q1A.etlmetadataxmi)=GSDBIB2
+//connection-info-name(data-flows/LABq1a.etlmetadataxmi)=GSDBIB2
 eclipse.preferences.version=1
 //connection-info-name(data-flows/LAB2Q1B.etlmetadataxmi)=GSDBIB2
 //connection-info-name(data-flows/Q2A.etlmetadataxmi)=GSDBIB2

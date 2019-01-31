@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.datatools.etl.dataflow.view:ETLFlow xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.datatools.etl.dataflow.view="http:///com/ibm/datatools/etl/dataflow/view.ecore">
+  <elements xsi:type="com.ibm.datatools.etl.dataflow.view:ETLOperator" y="180" height="-1" width="-1">
+    <outputs type="OutputPort" outgoingConnections="//@elements.2">
+      <operatorPort href="LAB3Q1BRESULT.cflowxmi#//@operatorMap.0/@value/@outputPortMap.0/@value"/>
+    </outputs>
+    <outputs type="OutputPort">
+      <operatorPort href="LAB3Q1BRESULT.cflowxmi#//@operatorMap.0/@value/@outputPortMap.1/@value"/>
+    </outputs>
+    <outputs type="OutputPort">
+      <operatorPort href="LAB3Q1BRESULT.cflowxmi#//@operatorMap.0/@value/@outputPortMap.2/@value"/>
+    </outputs>
+    <operator href="LAB3Q1BRESULT.cflowxmi#//@operatorMap.0/@value"/>
+  </elements>
+  <elements xsi:type="com.ibm.datatools.etl.dataflow.view:ETLOperator" x="172" y="175" height="-1" width="-1" type="http:///com/ibm/datatools/etl/cflow/core/cflow.oplib/Flow/DataFlowActivity">
+    <inputs incomingConnection="//@elements.2">
+      <operatorPort href="LAB3Q1BRESULT.cflowxmi#//@operatorMap.1/@value/@inputPortMap.0/@value"/>
+    </inputs>
+    <outputs type="OutputPort">
+      <operatorPort href="LAB3Q1BRESULT.cflowxmi#//@operatorMap.1/@value/@outputPortMap.0/@value"/>
+    </outputs>
+    <outputs type="OutputPort">
+      <operatorPort href="LAB3Q1BRESULT.cflowxmi#//@operatorMap.1/@value/@outputPortMap.1/@value"/>
+    </outputs>
+    <outputs type="OutputPort" outgoingConnections="//@elements.3">
+      <operatorPort href="LAB3Q1BRESULT.cflowxmi#//@operatorMap.1/@value/@outputPortMap.2/@value"/>
+    </outputs>
+    <operator href="LAB3Q1BRESULT.cflowxmi#//@operatorMap.1/@value"/>
+  </elements>
+  <elements xsi:type="com.ibm.datatools.etl.dataflow.view:ETLOperatorConnection" source="//@elements.0/@outputs.0" target="//@elements.1/@inputs.0">
+    <operatorLink href="LAB3Q1BRESULT.cflowxmi#//@linkList.0"/>
+  </elements>
+  <elements xsi:type="com.ibm.datatools.etl.dataflow.view:ETLOperatorConnection" source="//@elements.1/@outputs.2" target="//@elements.5/@inputs.0">
+    <operatorLink href="LAB3Q1BRESULT.cflowxmi#//@linkList.1"/>
+  </elements>
+  <elements xsi:type="com.ibm.datatools.etl.dataflow.view:ETLOperator" x="501" y="197" height="-1" width="-1" type="http:///com/ibm/datatools/etl/cflow/core/cflow.oplib/Flow/End">
+    <inputs incomingConnection="//@elements.6">
+      <operatorPort href="LAB3Q1BRESULT.cflowxmi#//@operatorMap.3/@value/@inputPortMap.0/@value"/>
+    </inputs>
+    <operator href="LAB3Q1BRESULT.cflowxmi#//@operatorMap.3/@value"/>
+  </elements>
+  <elements xsi:type="com.ibm.datatools.etl.dataflow.view:ETLOperator" x="373" y="192" height="-1" width="-1" type="http:///com/ibm/datatools/etl/cflow/core/cflow.oplib/Flow/DataFlowActivity">
+    <inputs incomingConnection="//@elements.3">
+      <operatorPort href="LAB3Q1BRESULT.cflowxmi#//@operatorMap.2/@value/@inputPortMap.0/@value"/>
+    </inputs>
+    <outputs type="OutputPort">
+      <operatorPort href="LAB3Q1BRESULT.cflowxmi#//@operatorMap.2/@value/@outputPortMap.0/@value"/>
+    </outputs>
+    <outputs type="OutputPort">
+      <operatorPort href="LAB3Q1BRESULT.cflowxmi#//@operatorMap.2/@value/@outputPortMap.1/@value"/>
+    </outputs>
+    <outputs type="OutputPort" outgoingConnections="//@elements.6">
+      <operatorPort href="LAB3Q1BRESULT.cflowxmi#//@operatorMap.2/@value/@outputPortMap.2/@value"/>
+    </outputs>
+    <operator href="LAB3Q1BRESULT.cflowxmi#//@operatorMap.2/@value"/>
+  </elements>
+  <elements xsi:type="com.ibm.datatools.etl.dataflow.view:ETLOperatorConnection" source="//@elements.5/@outputs.2" target="//@elements.4/@inputs.0">
+    <operatorLink href="LAB3Q1BRESULT.cflowxmi#//@linkList.2"/>
+  </elements>
+  <dataflow href="LAB3Q1BRESULT.cflowxmi#/"/>
+</com.ibm.datatools.etl.dataflow.view:ETLFlow>
